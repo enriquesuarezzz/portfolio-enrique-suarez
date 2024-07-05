@@ -1,5 +1,10 @@
 import Image from 'next/image'
+import { Metadata } from 'next'
 
+export const metadata: Metadata = {
+  title: 'Portfolio Enrique Suarez | Inicio',
+  description: 'Portfolio Enrique Suarez',
+}
 export default function Home() {
   return (
     <main>
