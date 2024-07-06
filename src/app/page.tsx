@@ -10,15 +10,13 @@ export default function Home() {
   return (
     <main>
       <header>
-        <div>
+        <div className="flex">
           <Image
-            src={
-              process.env.NEXT_PUBLIC_IMAGES_PATH +
-              '/public/images/header_image.avif'
-            }
+            src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/header_image.avif'}`}
             alt="Enrique Suarez"
             width={200}
             height={200}
+            className="rounded-full"
           />
           <OnestText
             tag="h1"
