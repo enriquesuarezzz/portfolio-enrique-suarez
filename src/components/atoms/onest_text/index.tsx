@@ -11,7 +11,7 @@ export interface OnestTextProps {
   text: string
   tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p'
   style?: 'light' | 'normal' | 'semibold' | 'bold'
-  fontSize?: '24px' | '16px'
+  fontSize?: '16px' | '24px' | '64px'
   leading?: 'normal' | 'none' | 'tight' | 'snug' | 'relaxed' | 'loose'
   className?: string
 }
@@ -41,6 +41,8 @@ export const OnestText = forwardRef<
           return 'text-[16px]'
         case '24px':
           return 'text-[18px] lg:text-[24px]'
+        case '64px':
+          return 'text-[32px] md:text-[48px] lg:text-[52px]'
       }
     }
 
