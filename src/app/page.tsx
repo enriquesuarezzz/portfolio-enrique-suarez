@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main>
       <header>
-        <div className="flex">
+        <div className="flex items-center gap-4">
           <Image
             src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/header_image.avif'}`}
             alt="Enrique Suarez"
