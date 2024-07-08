@@ -1,16 +1,18 @@
 import Image from 'next/image'
 import { Metadata } from 'next'
 import { OnestText } from '@/components/atoms/onest_text'
+import Navbar from '@/components/molecules/navbar/navbar'
 
 export const metadata: Metadata = {
-  title: 'Portfolio Enrique Suarez | Inicio',
-  description: 'Portfolio Enrique Suarez',
+  title: '<> Portfolio Enrique Suarez</>',
+  description: 'Portfolio de Enrique Suarez',
 }
 export default function Home() {
   return (
     <main>
-      <header>
-        <div className="flex items-center gap-4">
+      <Navbar />
+      {/* <header>
+        <div className="flex">
           <Image
             src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/header_image.avif'}`}
             alt="Enrique Suarez"
@@ -26,7 +28,7 @@ export default function Home() {
             className="text-white"
           />
         </div>
-      </header>
+      </header> */}
     </main>
   )
 }
