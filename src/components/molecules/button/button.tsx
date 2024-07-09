@@ -6,15 +6,21 @@ interface ButtonProps {
   className?: string
   href: string
   rel?: string
+  children?: React.ReactNode
 }
-export default function Button({ text, className, href }: ButtonProps) {
+export default function Button({
+  text,
+  className,
+  href,
+  children,
+}: ButtonProps) {
   return (
-    <Link href={href}>
-      <OnestText
-        text={text}
-        fontSize="18px"
-        className={`h-fit w-fit rounded-full bg-gray-700/70 px-6 py-1 text-white hover:bg-gray-800 ${className}`}
-      />
+    <Link
+      href={href}
+      className={`flex h-fit w-fit items-center justify-center gap-2 rounded-full bg-gray-700/70 px-6 py-1 hover:bg-gray-800 ${className}`}
+    >
+      {children}
+      <OnestText text={text} fontSize="18px" className={`text-white`} />
     </Link>
   )
 }

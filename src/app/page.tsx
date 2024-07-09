@@ -51,8 +51,9 @@ export default function Home() {
             text="Linkedin"
             href="https://www.linkedin.com/in/enrique-suarezzz"
             rel="noopener noreferrer"
-          />
-          <Linkedin></Linkedin>
+          >
+            <Linkedin />
+          </Button>
         </div>
       </SectionLayout>
     </main>
