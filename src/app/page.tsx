@@ -7,6 +7,7 @@ import Linkedin from '@/components/atoms/svg/linkedin'
 import Mail from '@/components/atoms/svg/mail'
 import Github from '@/components/atoms/svg/github'
 import Download from '@/components/atoms/svg/download'
+import Experience from '@/components/molecules/experience/experience'
 
 export const metadata: Metadata = {
   title: '<> Portfolio Enrique Suarez</>',
@@ -22,7 +23,7 @@ export default function Home() {
               text="Hey, soy Enrique Suarez"
               tag="h1"
               style="bold"
-              fontSize="64px"
+              fontSize="52px"
               className="text-white"
             />
             <OnestText
@@ -83,6 +84,7 @@ export default function Home() {
             </Button>
           </div>
         </header>
+        <Experience />
       </SectionLayout>
     </main>
   )
