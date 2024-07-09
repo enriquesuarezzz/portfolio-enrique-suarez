@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 }
 export default function Home() {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col px-4">
       <SectionLayout>
         <header className="flex flex-col items-center justify-center gap-10 pt-24 lg:flex-row lg:gap-40 lg:pt-40">
           <div className="flex w-full max-w-[375px] flex-col items-center justify-center gap-6 md:max-w-[500px]">
