@@ -4,8 +4,8 @@ export default function Linkedin(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="128"
-      height="128"
+      width="30"
+      height="30"
       viewBox="0 0 24 24"
     >
       <path
