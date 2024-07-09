@@ -21,14 +21,14 @@ export default function Navbar() {
     },
   ]
   return (
-    <nav className="fixed mx-auto flex w-full justify-center gap-3 pt-5 md:gap-5">
+    <nav className="fixed top-0 mx-auto flex w-full justify-center gap-3 pt-5 md:gap-5">
       {data.map((item) => (
         <Link href={item.href} key={item.title}>
           <OnestText
             text={item.title}
             style="bold"
             fontSize="18px"
-            className="hover:text-orange text-white"
+            className="text-white hover:text-orange"
           />
         </Link>
       ))}

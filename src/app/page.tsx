@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <SectionLayout>
-        <header className="flex items-center justify-center gap-40 pt-40">
-          <div className="flex max-w-[500px] flex-col items-center gap-6">
+        <header className="flex flex-col items-center justify-center gap-10 pt-24 lg:flex-row lg:gap-40 lg:pt-40">
+          <div className="flex w-full max-w-[375px] flex-col items-center justify-center gap-6 md:max-w-[500px]">
             <OnestText
               text="Hey, soy Enrique Suarez"
               tag="h1"
@@ -38,7 +38,7 @@ export default function Home() {
             fontSize="24px"
             className="text-white"
           /> */}
-            <div className="flex gap-10 pt-10">
+            <div className="grid w-full grid-cols-2 pt-4 md:flex md:gap-10 lg:pt-10">
               <Button
                 text="Contáctame"
                 href="mailto:enriquesuarezmartin@gmail.com"
@@ -50,6 +50,7 @@ export default function Home() {
                 text="Linkedin"
                 href="https://www.linkedin.com/in/enrique-suarezzz"
                 rel="noopener noreferrer"
+                className="ml-4 md:ml-0"
               >
                 <Linkedin />
               </Button>
@@ -57,6 +58,7 @@ export default function Home() {
                 text="Github"
                 href="https://www.github.com/enriquesuarezzz"
                 rel="noopener noreferrer"
+                className="mt-4 md:mt-0"
               >
                 <Github />
               </Button>
