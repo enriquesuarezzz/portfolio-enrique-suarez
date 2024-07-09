@@ -7,12 +7,14 @@ interface ButtonProps {
   href: string
   rel?: string
   children?: React.ReactNode
+  download?: string
 }
 export default function Button({
   text,
   className,
   href,
   children,
+  download,
 }: ButtonProps) {
   return (
     <Link
@@ -21,6 +23,7 @@ export default function Button({
     >
       {children}
       <OnestText text={text} fontSize="18px" className={`text-white`} />
+      {download}
     </Link>
   )
 }

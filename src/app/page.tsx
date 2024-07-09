@@ -4,6 +4,9 @@ import { OnestText } from '@/components/atoms/onest_text'
 import Button from '@/components/molecules/button/button'
 import SectionLayout from '@/components/atoms/section_layout'
 import Linkedin from '@/components/atoms/svg/linkedin'
+import Mail from '@/components/atoms/svg/mail'
+import Github from '@/components/atoms/svg/github'
+import Download from '@/components/atoms/svg/download'
 
 export const metadata: Metadata = {
   title: '<> Portfolio Enrique Suarez</>',
@@ -23,7 +26,7 @@ export default function Home() {
               className="text-white"
             />
             <OnestText
-              text="Bienvenido a mi pequeño rinconcito, soy técnico superior de Desarrollo De Aplicaciones web, y me encantaría unirme a tu equipo de trabajo y aportar mi granito de arena :)"
+              text="Bienvenido a mi pequeño rinconcito, <span class='text-orange'> soy técnico superior de Desarrollo De Aplicaciones web </span>, y me encantaría unirme a tu equipo de trabajo y aportar mi granito de arena :)"
               tag="h2"
               style="bold"
               fontSize="16px"
@@ -35,26 +38,49 @@ export default function Home() {
             fontSize="24px"
             className="text-white"
           /> */}
+            <div className="flex gap-10 pt-10">
+              <Button
+                text="Contáctame"
+                href="mailto:enriquesuarezmartin@gmail.com"
+                rel="noopener noreferrer"
+              >
+                <Mail />
+              </Button>
+              <Button
+                text="Linkedin"
+                href="https://www.linkedin.com/in/enrique-suarezzz"
+                rel="noopener noreferrer"
+              >
+                <Linkedin />
+              </Button>
+              <Button
+                text="Github"
+                href="https://www.github.com/enriquesuarezzz"
+                rel="noopener noreferrer"
+              >
+                <Github />
+              </Button>
+            </div>
           </div>
 
-          <Image
-            src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/a.jpg'}`}
-            alt="Enrique Suarez"
-            width={300}
-            height={50}
-            unoptimized
-            className="rounded-full"
-          />
+          <div className="flex flex-col items-center justify-center gap-6">
+            <Image
+              src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/a.jpg'}`}
+              alt="Enrique Suarez"
+              width={220}
+              height={50}
+              unoptimized
+              className="rounded-full"
+            />
+            <Button
+              text="Descarga mi Curriculum"
+              href="/pdf/CV_enrique_suarez_martin_.pdf"
+              rel="noopener noreferrer"
+            >
+              <Download />
+            </Button>
+          </div>
         </header>
-        <div className="flex">
-          <Button
-            text="Linkedin"
-            href="https://www.linkedin.com/in/enrique-suarezzz"
-            rel="noopener noreferrer"
-          >
-            <Linkedin />
-          </Button>
-        </div>
       </SectionLayout>
     </main>
   )
