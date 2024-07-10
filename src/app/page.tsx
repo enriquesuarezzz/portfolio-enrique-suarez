@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <SectionLayout>
-        <header className="flex flex-col items-center justify-center gap-24 pt-24 md:flex-row lg:gap-40 lg:pt-40">
+        <header className="flex flex-col items-center justify-center gap-10 pt-24 md:flex-row md:gap-24 lg:gap-40 lg:pt-40">
           <div className="flex w-full max-w-[375px] flex-col items-center justify-center gap-6 md:max-w-[500px]">
             <OnestText
               text="Hey, soy Enrique Suarez"
@@ -68,7 +68,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex pb-16">
+          <div className="flex pb-0 md:pb-20 lg:pb-16">
             <Image
               src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/a.jpg'}`}
               alt="Enrique Suarez"
