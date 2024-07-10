@@ -19,6 +19,9 @@ const config: Config = {
       maxWidth: {
         '8xl': '1100px',
       },
+      animation: {
+        'spin-slow': 'spin 4s linear infinite',
+      },
     },
   },
   plugins: [],

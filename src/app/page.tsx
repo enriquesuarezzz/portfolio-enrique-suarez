@@ -8,6 +8,7 @@ import Mail from '@/components/atoms/svg/mail'
 import Github from '@/components/atoms/svg/github'
 import Download from '@/components/atoms/svg/download'
 import Experience from '@/components/molecules/experience/experience'
+import Skills from '@/components/molecules/skills/skills'
 
 export const metadata: Metadata = {
   title: '<> Portfolio Enrique Suarez</>',
@@ -80,6 +81,7 @@ export default function Home() {
           </div>
         </header>
         <Experience />
+        <Skills />
       </SectionLayout>
     </main>
   )
