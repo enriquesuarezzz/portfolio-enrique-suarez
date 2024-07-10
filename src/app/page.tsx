@@ -15,9 +15,9 @@ export const metadata: Metadata = {
 }
 export default function Home() {
   return (
-    <main className="flex flex-col px-4">
+    <main className="flex flex-col">
       <SectionLayout>
-        <header className="flex flex-col items-center justify-center gap-10 pt-24 lg:flex-row lg:gap-40 lg:pt-40">
+        <header className="flex flex-col items-center justify-center gap-24 pt-24 md:flex-row lg:gap-40 lg:pt-40">
           <div className="flex w-full max-w-[375px] flex-col items-center justify-center gap-6 md:max-w-[500px]">
             <OnestText
               text="Hey, soy Enrique Suarez"
@@ -33,13 +33,7 @@ export default function Home() {
               fontSize="16px"
               className="text-white"
             />
-            {/* <OnestText
-            text={` <span class="text-red-600">if</span> (<span class="text-purple-600">stomago.status</span> <span class="text-red-600"> == </span>  <span class="text-yellow-600">"vacio"</span> ) { </br> <span class="text-green-500"> compraPizza </span> (); </br> } <span class="text-red-600" >else</span>  { </br> <span class="text-green-500">continuaProgramando</span>(); </br> }`}
-            style="bold"
-            fontSize="24px"
-            className="text-white"
-          /> */}
-            <div className="grid w-full grid-cols-2 pt-4 md:flex md:gap-10 lg:pt-10">
+            <div className="grid w-full grid-cols-2 pt-4 md:flex md:gap-4 lg:pt-10">
               <Button
                 text="Contáctame"
                 href="mailto:enriquesuarezmartin@gmail.com"
@@ -63,10 +57,18 @@ export default function Home() {
               >
                 <Github />
               </Button>
+              <Button
+                text="Descargar CV"
+                href="/pdf/CV_enrique_suarez_martin_.pdf"
+                rel="noopener noreferrer"
+                className="ml-4 mt-4 text-nowrap md:ml-0 md:mt-0"
+              >
+                <Download />
+              </Button>
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-6">
+          <div className="flex pb-16">
             <Image
               src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/a.jpg'}`}
               alt="Enrique Suarez"
@@ -75,13 +77,6 @@ export default function Home() {
               unoptimized
               className="rounded-full"
             />
-            <Button
-              text="Descarga mi Curriculum"
-              href="/pdf/CV_enrique_suarez_martin_.pdf"
-              rel="noopener noreferrer"
-            >
-              <Download />
-            </Button>
           </div>
         </header>
         <Experience />
