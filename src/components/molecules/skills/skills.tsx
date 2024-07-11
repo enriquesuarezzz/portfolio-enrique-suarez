@@ -13,36 +13,36 @@ export default function Skills() {
         />
       </div>
       <div className="grid grid-cols-2 gap-6">
-        <div className="bg-dark-blue/60 h-64 w-full rounded-2xl">
+        <div className="h-64 w-full rounded-2xl bg-dark-blue/60">
           <OnestText
             text="FrontEnd"
             style="bold"
             fontSize="36px"
-            className="mb-8 bg-gradient-to-t from-[#54fbff] to-[#00a4c9] bg-clip-text text-center text-xl font-bold text-transparent lg:break-words lg:text-4xl dark:from-[#395f8d] dark:to-[#3bd1ff] dark:text-transparent"
+            className="bg-gradient-to-t from-[#54fbff] to-[#00a4c9] bg-clip-text text-center text-transparent dark:from-[#d4b48f] dark:to-orange dark:text-transparent"
           />
         </div>
-        <div className="bg-dark-blue/60 h-64 w-full rounded-2xl">
+        <div className="h-64 w-full rounded-2xl bg-dark-blue/60">
           <OnestText
-            text="FrontEnd"
+            text="BackEnd"
             style="bold"
             fontSize="36px"
-            className="mb-8 bg-gradient-to-t from-[#54fbff] to-[#00a4c9] bg-clip-text text-center text-xl font-bold text-transparent lg:break-words lg:text-4xl dark:from-[#ffffff] dark:to-indigo-500 dark:text-transparent"
+            className="bg-gradient-to-t from-[#54fbff] to-[#00a4c9] bg-clip-text text-center text-transparent dark:from-[#d4b48f] dark:to-orange dark:text-transparent"
           />
         </div>
-        <div className="bg-dark-blue/60 h-64 w-full rounded-2xl">
+        <div className="h-64 w-full rounded-2xl bg-dark-blue/60">
           <OnestText
-            text="FrontEnd"
+            text="Aprendiendo"
             style="bold"
             fontSize="36px"
-            className="text-white"
+            className="bg-gradient-to-t from-[#54fbff] to-[#00a4c9] bg-clip-text text-center text-transparent dark:from-[#d4b48f] dark:to-orange dark:text-transparent"
           />
         </div>
-        <div className="bg-dark-blue/60 h-64 w-full rounded-2xl">
+        <div className="h-64 w-full rounded-2xl bg-dark-blue/60">
           <OnestText
-            text="FrontEnd"
+            text="Herramientas"
             style="bold"
             fontSize="36px"
-            className="text-orange"
+            className="bg-gradient-to-t from-[#54fbff] to-[#00a4c9] bg-clip-text text-center text-transparent dark:from-[#d4b48f] dark:to-orange dark:text-transparent"
           />
         </div>
       </div>
