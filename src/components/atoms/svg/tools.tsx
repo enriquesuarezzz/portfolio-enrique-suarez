@@ -8,6 +8,7 @@ export default function Mail(props: SVGProps<SVGSVGElement>) {
       width="30"
       height="30"
       viewBox="0 0 24 24"
+      {...props}
     >
       <g
         fill="none"
