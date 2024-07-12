@@ -18,7 +18,9 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <SectionLayout>
+        {/* headerSection */}
         <header className="flex flex-col items-center justify-center gap-10 pt-24 md:flex-row md:gap-24 lg:gap-40 lg:pt-40">
+          {/* main title */}
           <div className="flex w-full max-w-[375px] flex-col items-center justify-center gap-6 md:max-w-[500px]">
             <OnestText
               text="Hey, soy Enrique Suarez"
@@ -27,6 +29,7 @@ export default function Home() {
               fontSize="52px"
               className="text-white"
             />
+            {/* description */}
             <OnestText
               text="Bienvenido a mi pequeño rinconcito, <span class='text-orange'> soy técnico superior de Desarrollo De Aplicaciones web </span>, y me encantaría unirme a tu equipo de trabajo y aportar mi granito de arena :)"
               tag="h2"
@@ -34,7 +37,9 @@ export default function Home() {
               fontSize="16px"
               className="text-white"
             />
+            {/* buttons */}
             <div className="grid w-full grid-cols-2 pt-4 md:flex md:gap-4 lg:pt-10">
+              {/* contact button */}
               <Button
                 text="Contáctame"
                 href="mailto:enriquesuarezmartin@gmail.com"
@@ -42,6 +47,7 @@ export default function Home() {
               >
                 <Mail />
               </Button>
+              {/* linkedin button */}
               <Button
                 text="Linkedin"
                 href="https://www.linkedin.com/in/enrique-suarezzz"
@@ -50,6 +56,7 @@ export default function Home() {
               >
                 <Linkedin />
               </Button>
+              {/* github button */}
               <Button
                 text="Github"
                 href="https://www.github.com/enriquesuarezzz"
@@ -58,6 +65,7 @@ export default function Home() {
               >
                 <Github />
               </Button>
+              {/* download cv button */}
               <Button
                 text="Descargar CV"
                 href="/pdf/CV_enrique_suarez_martin_.pdf"
@@ -68,7 +76,7 @@ export default function Home() {
               </Button>
             </div>
           </div>
-
+          {/* image */}
           <div className="flex pb-0 md:pb-20 lg:pb-16">
             <Image
               src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/a.jpg'}`}
@@ -80,6 +88,7 @@ export default function Home() {
             />
           </div>
         </header>
+        {/* experience section */}
         <Experience />
         <Skills />
       </SectionLayout>
