@@ -57,7 +57,7 @@ export default function Experience() {
             />
           </div>
           {/* projects */}
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             {/* first project */}
             <Link href="https://mumbaimasalarestaurants.com/es" target="_blank">
               <Image
