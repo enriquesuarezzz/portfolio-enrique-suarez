@@ -37,7 +37,7 @@ export default function Skills() {
             fontSize="36px"
             className="bg-gradient-to-t from-[#54fbff] to-[#00a4c9] bg-clip-text text-center text-transparent dark:from-[#d4b48f] dark:to-blue-500 dark:text-transparent"
           />
-          <div className="mx-auto grid h-full max-h-[212px] w-full grid-cols-2 gap-4 rounded-2xl bg-dark-blue/60 lg:grid-cols-3">
+          <div className="mx-auto grid h-full w-full grid-cols-2 gap-4 rounded-2xl bg-dark-blue/60 py-6 lg:grid-cols-3">
             <Html className="mx-auto size-10 md:size-20" />
             <Css className="mx-auto size-10 md:size-20" />
             <Js className="mx-auto size-10 md:size-20" />
@@ -54,7 +54,7 @@ export default function Skills() {
             fontSize="36px"
             className="bg-gradient-to-t from-[#54fbff] to-[#00a4c9] bg-clip-text text-center text-transparent dark:from-[#d4b48f] dark:to-purple-400 dark:text-transparent"
           />
-          <div className="mx-auto grid h-full max-h-[212px] w-full grid-cols-2 gap-4 rounded-2xl bg-dark-blue/60 lg:grid-cols-3">
+          <div className="mx-auto grid h-full max-h-[212px] w-full grid-cols-2 gap-4 rounded-2xl bg-dark-blue/60 py-6 lg:grid-cols-3">
             <NextJs className="mx-auto size-10 md:size-20" />
             <MySQL className="mx-auto size-10 md:size-20" />
           </div>
@@ -67,7 +67,7 @@ export default function Skills() {
             fontSize="36px"
             className="bg-gradient-to-t from-[#54fbff] to-[#00a4c9] bg-clip-text text-center text-transparent dark:from-[#d4b48f] dark:to-rose-950 dark:text-transparent"
           />
-          <div className="mx-auto grid h-full max-h-[212px] w-full grid-cols-2 gap-4 rounded-2xl bg-dark-blue/60 lg:grid-cols-3">
+          <div className="mx-auto grid h-full max-h-[212px] w-full grid-cols-2 gap-4 rounded-2xl bg-dark-blue/60 py-6 lg:grid-cols-3">
             <Python className="mx-auto size-10 md:size-20" />
             <Php className="mx-auto size-10 md:size-20" />
           </div>
@@ -80,7 +80,7 @@ export default function Skills() {
             fontSize="36px"
             className="bg-gradient-to-t from-[#54fbff] to-[#00a4c9] bg-clip-text text-center text-transparent dark:from-[#d4b48f] dark:to-emerald-600 dark:text-transparent"
           />
-          <div className="mx-auto grid h-full max-h-[212px] w-full grid-cols-2 gap-4 rounded-2xl bg-dark-blue/60 lg:grid-cols-3">
+          <div className="mx-auto grid h-full max-h-[212px] w-full grid-cols-2 gap-4 rounded-2xl bg-dark-blue/60 py-6 lg:grid-cols-3">
             <VisualStudioCode className="mx-auto size-10 md:size-20" />
             <Git className="mx-auto size-10 md:size-20" />
             <Github className="mx-auto size-10 md:size-20" />
