@@ -7,6 +7,7 @@ export default function Computer(props: SVGProps<SVGSVGElement>) {
       width="30"
       height="30"
       viewBox="0 0 14 14"
+      {...props}
     >
       <path
         fill="none"

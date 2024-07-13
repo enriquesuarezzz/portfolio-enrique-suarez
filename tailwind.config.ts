@@ -15,9 +15,13 @@ const config: Config = {
       },
       colors: {
         orange: '#F58700',
+        'dark-blue': '#070a13',
       },
       maxWidth: {
         '8xl': '1100px',
+      },
+      animation: {
+        'spin-slow': 'spin 4s linear infinite',
       },
     },
   },

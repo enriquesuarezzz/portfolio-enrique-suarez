@@ -2,12 +2,13 @@ import Image from 'next/image'
 import { Metadata } from 'next'
 import { OnestText } from '@/components/atoms/onest_text'
 import Button from '@/components/molecules/button/button'
-import SectionLayout from '@/components/atoms/section_layout'
+import SectionLayout from '@/components/atoms/section_layout/section_layout'
 import Linkedin from '@/components/atoms/svg/linkedin'
 import Mail from '@/components/atoms/svg/mail'
 import Github from '@/components/atoms/svg/github'
 import Download from '@/components/atoms/svg/download'
 import Experience from '@/components/molecules/experience/experience'
+import Skills from '@/components/molecules/skills/skills'
 
 export const metadata: Metadata = {
   title: '<> Portfolio Enrique Suarez</>',
@@ -89,6 +90,7 @@ export default function Home() {
         </header>
         {/* experience section */}
         <Experience />
+        <Skills />
       </SectionLayout>
     </main>
   )

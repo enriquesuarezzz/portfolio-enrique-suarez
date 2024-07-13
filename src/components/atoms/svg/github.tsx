@@ -7,6 +7,7 @@ export default function Github(props: SVGProps<SVGSVGElement>) {
       width="30"
       height="30"
       viewBox="0 0 64 64"
+      {...props}
     >
       <path
         fill="white"

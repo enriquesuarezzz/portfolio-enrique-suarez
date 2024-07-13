@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Experience() {
   return (
-    <section className="flex w-full items-center justify-center px-8">
+    <section className="flex w-full items-center justify-center">
       <div className="w-full pt-10 md:pt-40">
         {/* title */}
         <div className="flex items-center justify-center gap-4 md:justify-start">
