@@ -42,11 +42,11 @@ export default function Experience() {
               text="Prácticas en empresa durante 3 meses, encargado de la creación de páginas web interactivas utilizando <span class='text-orange'>NextJS</span>, <span class='text-orange'>React</span>, y <span class='text-orange'>TailwindCSS</span> con <span class='text-orange'>Github</span> y <span class='text-orange'>Git</span> como control de versiones."
               style="bold"
               fontSize="16px"
-              className="text-white"
+              className="text-center text-white"
             />
           </div>
         </div>
-        <div className="flex flex-col gap-4 pt-10">
+        <div className="flex flex-col gap-4 pt-5 md:pt-10">
           <div>
             {/* title */}
             <OnestText

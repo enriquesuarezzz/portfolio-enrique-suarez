@@ -19,7 +19,7 @@ export default function Home() {
     <main className="flex flex-col">
       <SectionLayout>
         {/* headerSection */}
-        <header className="flex items-center justify-center gap-10 pt-24 md:gap-24 lg:gap-40 lg:pt-40">
+        <header className="flex items-center justify-center gap-10 pt-16 md:gap-24 md:pt-24 lg:gap-40 lg:pt-40">
           {/* main title */}
           <div className="flex w-full max-w-[375px] flex-col items-center justify-center gap-6 md:max-w-[500px]">
             <div className="flex items-center gap-4 md:items-start">
@@ -92,6 +92,7 @@ export default function Home() {
         </header>
         {/* experience section */}
         <Experience />
+        {/* skills section */}
         <Skills />
       </SectionLayout>
     </main>
