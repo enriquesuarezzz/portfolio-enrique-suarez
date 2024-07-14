@@ -53,7 +53,7 @@ export default function Experience() {
               text="Algunos proyectos en los que he colaborado en <span class='text-orange'>Marketec 360</span>"
               style="bold"
               fontSize="16px"
-              className="text-white"
+              className="text-center text-white"
             />
           </div>
           {/* projects */}
