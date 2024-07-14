@@ -28,8 +28,8 @@ export default function NextJs(props: SVGProps<SVGSVGElement>) {
           gradientTransform="scale(.71111)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#fff" stop-opacity="0" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#fff" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="IconifyId190a7c71b81d673249"
@@ -40,8 +40,8 @@ export default function NextJs(props: SVGProps<SVGSVGElement>) {
           gradientTransform="scale(.71111)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#fff" />
-          <stop offset="1" stop-color="#fff" stop-opacity="0" />
+          <stop stopColor="#fff" />
+          <stop offset="1" stopColor="#fff" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>

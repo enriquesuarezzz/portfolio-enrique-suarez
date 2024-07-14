@@ -17,8 +17,8 @@ export default function VisualStudioCode(props: SVGProps<SVGSVGElement>) {
           y1="0%"
           y2="100%"
         >
-          <stop offset="0%" stop-color="#FFF" />
-          <stop offset="100%" stop-color="#FFF" stop-opacity="0" />
+          <stop offset="0%" stopColor="#FFF" />
+          <stop offset="100%" stopColor="#FFF" stopOpacity="0" />
         </linearGradient>
         <path
           id="IconifyId190ac305b719418231"

@@ -18,9 +18,9 @@ export default function Php(props: SVGProps<SVGSVGElement>) {
           gradientTransform="translate(76.464 81.918)scale(.463)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#FFF" />
-          <stop offset=".5" stop-color="#4C6B97" />
-          <stop offset="1" stop-color="#231F20" />
+          <stop offset="0" stopColor="#FFF" />
+          <stop offset=".5" stopColor="#4C6B97" />
+          <stop offset="1" stopColor="#231F20" />
         </radialGradient>
       </defs>
       <ellipse
