@@ -4,11 +4,11 @@ import { OnestText } from '@/components/atoms/onest_text'
 import Button from '@/components/molecules/button/button'
 import SectionLayout from '@/components/atoms/section_layout/section_layout'
 import Linkedin from '@/components/atoms/svg/linkedin'
-import Mail from '@/components/atoms/svg/mail'
 import Github from '@/components/atoms/svg/github'
 import Download from '@/components/atoms/svg/download'
 import Experience from '@/components/molecules/experience/experience'
 import Skills from '@/components/molecules/skills/skills'
+import Proyects from '@/components/molecules/proyects/proyects'
 
 export const metadata: Metadata = {
   title: '<> Portfolio Enrique Suarez</>',
@@ -94,6 +94,8 @@ export default function Home() {
         <Experience />
         {/* skills section */}
         <Skills />
+        {/* proyects section */}
+        <Proyects />
       </SectionLayout>
     </main>
   )
