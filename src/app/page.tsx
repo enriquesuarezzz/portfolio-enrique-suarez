@@ -19,16 +19,26 @@ export default function Home() {
     <main className="flex flex-col">
       <SectionLayout>
         {/* headerSection */}
-        <header className="flex flex-col items-center justify-center gap-10 pt-24 md:flex-row md:gap-24 lg:gap-40 lg:pt-40">
+        <header className="flex items-center justify-center gap-10 pt-24 md:gap-24 lg:gap-40 lg:pt-40">
           {/* main title */}
           <div className="flex w-full max-w-[375px] flex-col items-center justify-center gap-6 md:max-w-[500px]">
-            <OnestText
-              text="Hey, soy Enrique Suarez"
-              tag="h1"
-              style="bold"
-              fontSize="52px"
-              className="text-white"
-            />
+            <div className="flex items-center gap-4 md:items-start">
+              <OnestText
+                text="Hey, soy Enrique Suarez"
+                tag="h1"
+                style="bold"
+                fontSize="52px"
+                className="text-white"
+              />
+              <Image
+                src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/header_image.avif'}`}
+                alt="Enrique Suarez"
+                width={100}
+                height={20}
+                unoptimized
+                className="block rounded-full md:hidden"
+              />
+            </div>
             {/* description */}
             <OnestText
               text="Bienvenido a mi pequeño rinconcito, <span class='text-orange'> soy técnico superior de Desarrollo De Aplicaciones web </span>, y me encantaría unirme a tu equipo de trabajo y aportar mi granito de arena :)"
@@ -39,20 +49,12 @@ export default function Home() {
             />
             {/* buttons */}
             <div className="grid w-full grid-cols-2 pt-4 md:flex md:gap-4 lg:pt-10">
-              {/* contact button */}
-              <Button
-                text="Contáctame"
-                href="mailto:enriquesuarezmartin@gmail.com"
-                rel="noopener noreferrer"
-              >
-                <Mail />
-              </Button>
               {/* linkedin button */}
               <Button
                 text="Linkedin"
                 href="https://www.linkedin.com/in/enrique-suarezzz"
                 rel="noopener noreferrer"
-                className="ml-4 md:ml-0"
+                className=""
               >
                 <Linkedin />
               </Button>
@@ -61,7 +63,7 @@ export default function Home() {
                 text="Github"
                 href="https://www.github.com/enriquesuarezzz"
                 rel="noopener noreferrer"
-                className="mt-4 md:mt-0"
+                className=""
               >
                 <Github />
               </Button>
@@ -70,18 +72,18 @@ export default function Home() {
                 text="Descargar CV"
                 href="/pdf/CV_enrique_suarez_martin_.pdf"
                 rel="noopener noreferrer"
-                className="ml-4 mt-4 text-nowrap md:ml-0 md:mt-0"
+                className="mt-4 text-nowrap md:ml-0 md:mt-0"
               >
                 <Download />
               </Button>
             </div>
           </div>
           {/* image */}
-          <div className="flex pb-0 md:pb-20 lg:pb-16">
+          <div className="hidden pb-0 md:flex md:pb-20 lg:pb-16">
             <Image
-              src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/a.jpg'}`}
+              src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/header_image.avif'}`}
               alt="Enrique Suarez"
-              width={220}
+              width={200}
               height={50}
               unoptimized
               className="rounded-full"

@@ -17,8 +17,8 @@ export default function Tailwind(props: SVGProps<SVGSVGElement>) {
           y1="32%"
           y2="67.556%"
         >
-          <stop offset="0%" stop-color="#2298BD" />
-          <stop offset="100%" stop-color="#0ED7B5" />
+          <stop offset="0%" stopColor="#2298BD" />
+          <stop offset="100%" stopColor="#0ED7B5" />
         </linearGradient>
       </defs>
       <path

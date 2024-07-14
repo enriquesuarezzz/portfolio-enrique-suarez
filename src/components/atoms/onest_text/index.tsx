@@ -46,7 +46,7 @@ export const OnestText = forwardRef<
         case '36px':
           return 'text-[28px] lg:text-[36px]'
         case '52px':
-          return 'text-[32px] md:text-[48px] lg:text-[52px]'
+          return 'text-[30px] md:text-[48px] lg:text-[52px]'
       }
     }
 
