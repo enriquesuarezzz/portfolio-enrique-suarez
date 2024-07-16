@@ -19,7 +19,7 @@ export default function Skills() {
     <section className="pt-10 md:pt-20">
       {/* section title */}
       <div className="flex items-center justify-center gap-4 pb-8 md:justify-start">
-        <Tools />
+        <Tools className="animate-spin-slow" />
         <OnestText
           text="Tecnologías"
           style="bold"

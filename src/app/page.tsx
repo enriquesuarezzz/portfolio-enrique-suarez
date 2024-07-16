@@ -4,11 +4,11 @@ import { OnestText } from '@/components/atoms/onest_text'
 import Button from '@/components/molecules/button/button'
 import SectionLayout from '@/components/atoms/section_layout/section_layout'
 import Linkedin from '@/components/atoms/svg/linkedin'
-import Mail from '@/components/atoms/svg/mail'
 import Github from '@/components/atoms/svg/github'
 import Download from '@/components/atoms/svg/download'
 import Experience from '@/components/molecules/experience/experience'
 import Skills from '@/components/molecules/skills/skills'
+import Proyects from '@/components/molecules/proyects/proyects'
 
 export const metadata: Metadata = {
   title: '<> Portfolio Enrique Suarez</>',
@@ -21,7 +21,7 @@ export default function Home() {
         {/* headerSection */}
         <header className="flex items-center justify-center gap-10 pt-16 md:gap-24 md:pt-24 lg:gap-40 lg:pt-40">
           {/* main title */}
-          <div className="flex w-full max-w-[375px] flex-col items-center justify-center gap-6 md:max-w-[500px]">
+          <div className="flex w-full max-w-[450px] flex-col items-center justify-center gap-6 md:max-w-[600px]">
             <div className="flex items-center gap-4 md:items-start">
               <OnestText
                 text="Hey, soy Enrique Suarez"
@@ -94,6 +94,8 @@ export default function Home() {
         <Experience />
         {/* skills section */}
         <Skills />
+        {/* proyects section */}
+        <Proyects />
       </SectionLayout>
     </main>
   )

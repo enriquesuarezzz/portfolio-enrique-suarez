@@ -13,6 +13,12 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        changeColor: {
+          '0%, 100%': { fill: 'white' },
+          '50%': { fill: 'yellow' },
+        },
+      },
       colors: {
         orange: '#F58700',
         'dark-blue': '#070a13',
@@ -22,6 +28,7 @@ const config: Config = {
       },
       animation: {
         'spin-slow': 'spin 4s linear infinite',
+        changeColor: 'changeColor 2s infinite',
       },
     },
   },

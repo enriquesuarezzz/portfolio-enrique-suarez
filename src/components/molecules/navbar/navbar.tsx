@@ -2,18 +2,19 @@ import { OnestText } from '@/components/atoms/onest_text'
 import Link from 'next/link'
 
 export default function Navbar() {
+  //array of navbar objects
   const data = [
     {
       title: 'Experiencia',
       href: '/experiencia',
     },
     {
-      title: 'Proyectos',
-      href: '/proyectos',
+      title: 'Tecnologías',
+      href: '/tecnologías',
     },
     {
-      title: 'Sobre Mí',
-      href: '/sobremi',
+      title: 'Proyectos',
+      href: '/proyectos',
     },
     {
       title: 'Contacto',
@@ -21,7 +22,8 @@ export default function Navbar() {
     },
   ]
   return (
-    <nav className="fixed top-0 mx-auto flex w-full justify-center gap-3 pr-4 pt-5 md:gap-5 md:pr-0">
+    <nav className="fixed top-0 mx-auto flex w-full justify-center gap-3 pt-5 md:gap-5">
+      {/* navbar links */}
       {data.map((item) => (
         <Link href={item.href} key={item.title}>
           <OnestText
