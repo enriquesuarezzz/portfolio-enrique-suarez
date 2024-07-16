@@ -42,7 +42,7 @@ export default function Experience() {
               text="Prácticas en empresa durante 3 meses, encargado de la creación de páginas web interactivas utilizando <span class='text-orange'>NextJS</span>, <span class='text-orange'>React</span>, y <span class='text-orange'>TailwindCSS</span> con <span class='text-orange'>Github</span> y <span class='text-orange'>Git</span> como control de versiones."
               style="bold"
               fontSize="16px"
-              className="text-center text-white"
+              className="text-center text-white md:text-start"
             />
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function Experience() {
               text="Algunos proyectos en los que he colaborado en <span class='text-orange'>Marketec 360</span>"
               style="bold"
               fontSize="16px"
-              className="text-center text-white"
+              className="text-center text-white md:text-start"
             />
           </div>
           {/* projects */}
