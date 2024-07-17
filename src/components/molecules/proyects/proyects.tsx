@@ -2,13 +2,41 @@ import { OnestText } from '@/components/atoms/onest_text'
 import LightBulb from '@/components/atoms/svg/lightbulb'
 import Image from 'next/image'
 import Button from '../button/button'
+import Github from '@/components/atoms/svg/github'
 
 export default function Proyects() {
   const proyects = [
     {
       image: '/images/mumbai.avif',
-      title: 'Marketec 360',
-      description: 'Aplicacion web para el manejo de inventario',
+      title: 'Depilacion Laser SHR',
+      description:
+        'Creacion de página web informativa para clinica de depilación láser SHR, con una seccion de contacto. Utilizando Nextjs y TailwindCSS',
+      preview: '',
+      github: '',
+    },
+    {
+      image: '/images/mumbai.avif',
+      title: 'Depilacion Laser SHR',
+      description:
+        'Creacion de página web informativa para clinica de depilación láser SHR, con una seccion de contacto. Utilizando Nextjs y TailwindCSS',
+      preview: '',
+      github: '',
+    },
+    {
+      image: '/images/mumbai.avif',
+      title: 'Depilacion Laser SHR',
+      description:
+        'Creacion de página web informativa para clinica de depilación láser SHR, con una seccion de contacto. Utilizando Nextjs y TailwindCSS',
+      preview: '',
+      github: '',
+    },
+    {
+      image: '/images/mumbai.avif',
+      title: 'Depilacion Laser SHR',
+      description:
+        'Creacion de página web informativa para clinica de depilación láser SHR, con una seccion de contacto. Utilizando Nextjs y TailwindCSS',
+      preview: '',
+      github: '',
     },
   ]
   return (
@@ -25,8 +53,8 @@ export default function Proyects() {
         />
       </div>
       {/* cards */}
-      <div className="grid grid-cols-2 gap-20">
-        {proyects.map(({ image, title, description }) => (
+      <div className="flex flex-col items-center justify-center gap-10 md:grid md:grid-cols-2 lg:gap-20">
+        {proyects.map(({ image, title, description, preview, github }) => (
           <div
             key={title}
             className="relative flex h-full max-h-[500px] max-w-[500px] flex-col items-center justify-center rounded-3xl border border-gray-400 bg-gradient-to-r from-gray-800 to-gray-900 shadow-2xl"
@@ -52,11 +80,19 @@ export default function Proyects() {
                 className="px-4 pt-2 text-center text-sm text-gray-300"
               />
             </div>
-            <div className="mb-6 mt-4">
+            <div className="mb-6 flex gap-4">
               <Button
-                text="Ver proyecto"
-                href="https://marketec360.com/"
-                className="from-primary to-secondary transform rounded-full bg-gradient-to-r px-6 py-2 font-semibold text-white transition-transform hover:scale-105"
+                text="Repositorio"
+                href={preview}
+                className="from-primary to-secondary mt-4 transform rounded-full bg-gradient-to-r px-6 py-2 font-semibold text-white transition-transform hover:scale-105"
+              >
+                <Github />
+              </Button>
+
+              <Button
+                text={'Preview'}
+                href={github}
+                className="from-primary to-secondary mt-4 transform rounded-full bg-gradient-to-r px-6 py-2 font-semibold text-white transition-transform hover:scale-105"
               />
             </div>
           </div>
