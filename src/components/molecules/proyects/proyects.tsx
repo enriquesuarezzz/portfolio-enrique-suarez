@@ -7,34 +7,17 @@ import Github from '@/components/atoms/svg/github'
 export default function Proyects() {
   const proyects = [
     {
-      image: '/images/mumbai.avif',
+      image: '/images/depilacion_laser.avif',
       title: 'Depilacion Laser SHR',
       description:
         'Creacion de página web informativa para clinica de depilación láser SHR, con una seccion de contacto. Utilizando Nextjs y TailwindCSS',
       preview: '',
-      github: '',
+      github: 'https://github.com/enriquesuarezzz/depilacion-laser/',
     },
     {
-      image: '/images/mumbai.avif',
-      title: 'Depilacion Laser SHR',
-      description:
-        'Creacion de página web informativa para clinica de depilación láser SHR, con una seccion de contacto. Utilizando Nextjs y TailwindCSS',
-      preview: '',
-      github: '',
-    },
-    {
-      image: '/images/mumbai.avif',
-      title: 'Depilacion Laser SHR',
-      description:
-        'Creacion de página web informativa para clinica de depilación láser SHR, con una seccion de contacto. Utilizando Nextjs y TailwindCSS',
-      preview: '',
-      github: '',
-    },
-    {
-      image: '/images/mumbai.avif',
-      title: 'Depilacion Laser SHR',
-      description:
-        'Creacion de página web informativa para clinica de depilación láser SHR, con una seccion de contacto. Utilizando Nextjs y TailwindCSS',
+      image: '/images/construction.avif',
+      title: 'Proyecto final de Curso',
+      description: 'En construcción...',
       preview: '',
       github: '',
     },
@@ -83,15 +66,16 @@ export default function Proyects() {
             <div className="mb-6 flex gap-4">
               <Button
                 text="Repositorio"
-                href={preview}
+                href={github}
                 className="from-primary to-secondary mt-4 transform rounded-full bg-gradient-to-r px-6 py-2 font-semibold text-white transition-transform hover:scale-105"
+                rel="noopener noreferrer"
               >
                 <Github />
               </Button>
 
               <Button
                 text={'Preview'}
-                href={github}
+                href={preview}
                 className="from-primary to-secondary mt-4 transform rounded-full bg-gradient-to-r px-6 py-2 font-semibold text-white transition-transform hover:scale-105"
               />
             </div>
