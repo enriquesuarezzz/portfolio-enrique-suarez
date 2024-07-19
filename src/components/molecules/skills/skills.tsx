@@ -16,7 +16,7 @@ import VisualStudioCode from '@/components/atoms/svg/skills/visual_studio_sode'
 import Tools from '@/components/atoms/svg/tools'
 export default function Skills() {
   return (
-    <section className="pt-10 md:pt-20">
+    <section id="skills" className="pt-10 md:pt-20">
       {/* section title */}
       <div className="flex items-center justify-center gap-4 pb-8 md:justify-start">
         <Tools className="animate-spin-slow" />
