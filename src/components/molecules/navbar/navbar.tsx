@@ -6,19 +6,19 @@ export default function Navbar() {
   const data = [
     {
       title: 'Experiencia',
-      href: '/experiencia',
+      href: '/#expererience',
     },
     {
       title: 'Tecnologías',
-      href: '/tecnologías',
+      href: '/#skills',
     },
     {
       title: 'Proyectos',
-      href: '/proyectos',
+      href: '/#proyects',
     },
     {
       title: 'Contacto',
-      href: '/contacto',
+      href: 'mailto:enriquesuarezmartin@gmail.com',
     },
   ]
   return (
