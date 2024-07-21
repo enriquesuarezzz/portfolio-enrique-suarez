@@ -70,7 +70,7 @@ export default function Home() {
               {/* download cv button */}
               <Button
                 text="Descargar CV"
-                href="/pdf/CV_enrique_suarez_martin_.pdf"
+                href="/pdf/enrique_suarez.pdf"
                 rel="noopener noreferrer"
                 className="mt-4 text-nowrap md:ml-0 md:mt-0"
               >
