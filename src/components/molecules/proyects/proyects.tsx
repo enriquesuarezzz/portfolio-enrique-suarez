@@ -11,7 +11,8 @@ export default function Proyects() {
       title: 'Depilacion Laser SHR',
       description:
         'Creacion de página web informativa para clinica de depilación láser SHR, con una seccion de contacto. Utilizando Nextjs y TailwindCSS',
-      preview: '',
+      preview:
+        'https://depilacion-laser-oj0d2wyob-enriquesuarezzzs-projects.vercel.app/',
       github: 'https://github.com/enriquesuarezzz/depilacion-laser/',
     },
     {
@@ -77,6 +78,7 @@ export default function Proyects() {
                 text={'Preview'}
                 href={preview}
                 className="from-primary to-secondary mt-4 transform rounded-full bg-gradient-to-r px-6 py-2 font-semibold text-white transition-transform hover:scale-105"
+                rel="noopener noreferrer"
               />
             </div>
           </div>
