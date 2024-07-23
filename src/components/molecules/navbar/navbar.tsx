@@ -1,4 +1,5 @@
 import { OnestText } from '@/components/atoms/onest_text'
+import LightMode from '@/components/atoms/svg/light_mode'
 import Link from 'next/link'
 
 export default function Navbar() {
@@ -22,7 +23,7 @@ export default function Navbar() {
     },
   ]
   return (
-    <nav className="fixed top-0 mx-auto flex w-full justify-center gap-3 pt-5 md:gap-5">
+    <nav className="fixed top-0 mx-auto flex w-full items-center justify-center gap-3 pt-5 md:gap-5">
       {/* navbar links */}
       {data.map((item) => (
         <Link href={item.href} key={item.title}>
@@ -34,6 +35,8 @@ export default function Navbar() {
           />
         </Link>
       ))}
+
+      <LightMode />
     </nav>
   )
 }
