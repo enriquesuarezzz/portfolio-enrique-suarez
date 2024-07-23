@@ -1,13 +1,32 @@
+'use client'
 import { OnestText } from '@/components/atoms/onest_text'
+import DarkMode from '@/components/atoms/svg/dark_mode'
 import LightMode from '@/components/atoms/svg/light_mode'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 export default function Navbar() {
-  //array of navbar objects
+  const [theme, setTheme] = useState('light')
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme')
+    if (savedTheme) {
+      setTheme(savedTheme)
+    }
+  }, [])
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light'
+    setTheme(newTheme)
+    document.documentElement.classList.remove(theme)
+    document.documentElement.classList.add(newTheme)
+    localStorage.setItem('theme', newTheme)
+  }
+
   const data = [
     {
       title: 'Experiencia',
-      href: '/#expererience',
+      href: '/#experience',
     },
     {
       title: 'Tecnologías',
@@ -15,16 +34,17 @@ export default function Navbar() {
     },
     {
       title: 'Proyectos',
-      href: '/#proyects',
+      href: '/#projects',
     },
     {
       title: 'Contacto',
       href: 'mailto:enriquesuarezmartin@gmail.com',
     },
   ]
+
   return (
     <nav className="fixed top-0 mx-auto flex w-full items-center justify-center gap-3 pt-5 md:gap-5">
-      {/* navbar links */}
+      {/* Navbar links */}
       {data.map((item) => (
         <Link href={item.href} key={item.title}>
           <OnestText
@@ -35,8 +55,9 @@ export default function Navbar() {
           />
         </Link>
       ))}
-
-      <LightMode />
+      <button onClick={toggleTheme} className="focus:outline-none">
+        {theme === 'light' ? <LightMode /> : <DarkMode />}
+      </button>
     </nav>
   )
 }
