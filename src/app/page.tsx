@@ -13,6 +13,20 @@ import Proyects from '@/components/molecules/proyects/proyects'
 export const metadata: Metadata = {
   title: '<> Portfolio Enrique Suarez</>',
   description: 'Portfolio de Enrique Suarez',
+  openGraph: {
+    title: 'Portfolio Enrique Suarez',
+    description:
+      'Portfolio de Enrique Suarez desarrollador de aplicaciones web',
+    url: 'https://www.enriquesuarez.dev',
+    siteName: 'Portfolio Enrique Suarez',
+    images: [
+      {
+        url: 'https://www.enriquesuarez.dev',
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
 }
 export default function Home() {
   return (
