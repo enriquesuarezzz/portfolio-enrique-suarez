@@ -1,28 +1,7 @@
-'use client'
 import { OnestText } from '@/components/atoms/onest_text'
-import DarkMode from '@/components/atoms/svg/dark_mode'
-import LightMode from '@/components/atoms/svg/light_mode'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
 
 export default function Navbar() {
-  const [theme, setTheme] = useState('light')
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme')
-    if (savedTheme) {
-      setTheme(savedTheme)
-    }
-  }, [])
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light'
-    setTheme(newTheme)
-    document.documentElement.classList.remove(theme)
-    document.documentElement.classList.add(newTheme)
-    localStorage.setItem('theme', newTheme)
-  }
-
   const data = [
     {
       title: 'Experiencia',
@@ -55,9 +34,6 @@ export default function Navbar() {
           />
         </Link>
       ))}
-      <button onClick={toggleTheme} className="focus:outline-none">
-        {theme === 'light' ? <LightMode /> : <DarkMode />}
-      </button>
     </nav>
   )
 }
