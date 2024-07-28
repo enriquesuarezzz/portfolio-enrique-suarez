@@ -9,6 +9,8 @@ import Download from '@/components/atoms/svg/download'
 import Experience from '@/components/molecules/experience/experience'
 import Skills from '@/components/molecules/skills/skills'
 import Proyects from '@/components/molecules/proyects/proyects'
+import { GeneralProps } from '@/interfaces/lang-props'
+import { getDictionary } from './dictionaries'
 
 export const metadata: Metadata = {
   title: '<> Portfolio Enrique Suarez</>',
@@ -28,7 +30,8 @@ export const metadata: Metadata = {
     ],
   },
 }
-export default function Home() {
+export default async function Home({ params: { lang } }: GeneralProps) {
+  const dict = await getDictionary(lang)
   return (
     <main className="flex flex-col">
       <SectionLayout>
