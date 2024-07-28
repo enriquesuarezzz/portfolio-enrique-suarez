@@ -1,6 +1,6 @@
 {
-  "titulo": {
-    "hola": "ejemplo1",
-    "hola2": "ejemplo2"
+  "metadata": {
+    "title": "Portfolio Enrique Suarez",
+    "description": "Portfolio de Enrique Suarez desarrollador de aplicaciones web"
   }
 }

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Metadata } from 'next'
+import { Metadata, ResolvingMetadata } from 'next'
 import { OnestText } from '@/components/atoms/onest_text'
 import Button from '@/components/molecules/button/button'
 import SectionLayout from '@/components/atoms/section_layout/section_layout'
@@ -12,23 +12,29 @@ import Proyects from '@/components/molecules/proyects/proyects'
 import { GeneralProps } from '@/interfaces/lang-props'
 import { getDictionary } from './dictionaries'
 
-export const metadata: Metadata = {
-  title: '<> Portfolio Enrique Suarez</>',
-  description: 'Portfolio de Enrique Suarez',
-  openGraph: {
-    title: 'Portfolio Enrique Suarez',
-    description:
-      'Portfolio de Enrique Suarez desarrollador de aplicaciones web',
-    url: 'https://www.enriquesuarez.dev',
-    siteName: 'Portfolio Enrique Suarez',
-    images: [
-      {
-        url: 'https://www.enriquesuarez.dev',
-        width: 800,
-        height: 600,
-      },
-    ],
-  },
+export async function generateMetadata(
+  { params: { lang } }: GeneralProps,
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
+  const dict = await getDictionary(lang)
+
+  return {
+    title: `${dict.metadata.title}`,
+    description: `${dict.metadata.description}`,
+    openGraph: {
+      title: `${dict.metadata.title}`,
+      description: `${dict.metadata.description}`,
+      url: 'https://www.enriquesuarez.dev',
+      siteName: 'Portfolio Enrique Suarez',
+      images: [
+        {
+          url: 'https://www.enriquesuarez.dev/images/header_image.avif',
+          width: 800,
+          height: 600,
+        },
+      ],
+    },
+  }
 }
 export default async function Home({ params: { lang } }: GeneralProps) {
   const dict = await getDictionary(lang)
