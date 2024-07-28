@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Experience() {
   return (
     <section
-      id="expererience"
+      id="experience"
       className="flex w-full items-center justify-center"
     >
       <div className="w-full pt-10 md:pt-40">
