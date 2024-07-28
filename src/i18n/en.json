@@ -1,6 +1,16 @@
 {
   "metadata": {
-    "title": "Enrique Suarez Portfolio",
+    "title": "<>Enrique Suarez Portfolio</>",
     "description": "Enrique Suarez web developer portfolio"
+  },
+  "navbar": {
+    "experience": "Experience",
+    "skills": "Tecnologies",
+    "proyects": "Proyects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Hey, I'm Enrique Suarez",
+    "description": "Welcome to my little corner, <span class='text-orange'> I am a web developer </span>, and I would love to join your team and contribute my bit :)"
   }
 }

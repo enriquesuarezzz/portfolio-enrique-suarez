@@ -1,22 +1,23 @@
 import { OnestText } from '@/components/atoms/onest_text'
+import { LangProps } from '@/interfaces/lang-props'
 import Link from 'next/link'
 
-export default function Navbar() {
+export default function Navbar({ dict }: LangProps) {
   const data = [
     {
-      title: 'Experiencia',
+      title: `${dict.navbar.experience}`,
       href: '/#experience',
     },
     {
-      title: 'Tecnologías',
+      title: `${dict.navbar.skills}`,
       href: '/#skills',
     },
     {
-      title: 'Proyectos',
+      title: `${dict.navbar.proyects}`,
       href: '/#proyects',
     },
     {
-      title: 'Contacto',
+      title: `${dict.navbar.contact}`,
       href: 'mailto:enriquesuarezmartin@gmail.com',
     },
   ]

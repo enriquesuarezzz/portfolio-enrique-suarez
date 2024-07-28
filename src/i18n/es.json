@@ -1,6 +1,16 @@
 {
   "metadata": {
-    "title": "Portfolio Enrique Suarez",
+    "title": "<>Portfolio Enrique Suarez</>",
     "description": "Portfolio de Enrique Suarez desarrollador de aplicaciones web"
+  },
+  "navbar": {
+    "experience": "Experiencia",
+    "skills": "Tecnologias",
+    "proyects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Hey, soy Enrique Suarez",
+    "description": "Bienvenido a mi pequeño rinconcito, <span class='text-orange'> soy técnico superior de Desarrollo De Aplicaciones web </span>, y me encantaría unirme a tu equipo de trabajo y aportar mi granito de arena :)"
   }
 }

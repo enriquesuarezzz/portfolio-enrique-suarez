@@ -25,7 +25,7 @@ export async function generateMetadata(
       title: `${dict.metadata.title}`,
       description: `${dict.metadata.description}`,
       url: 'https://www.enriquesuarez.dev',
-      siteName: 'Portfolio Enrique Suarez',
+      siteName: `${dict.metadata.title}`,
       images: [
         {
           url: 'https://www.enriquesuarez.dev/images/header_image.avif',
