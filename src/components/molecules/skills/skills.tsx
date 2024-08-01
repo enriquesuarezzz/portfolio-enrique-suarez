@@ -14,14 +14,15 @@ import Tailwind from '@/components/atoms/svg/skills/tailwind'
 import Typescript from '@/components/atoms/svg/skills/typescript'
 import VisualStudioCode from '@/components/atoms/svg/skills/visual_studio_sode'
 import Tools from '@/components/atoms/svg/tools'
-export default function Skills() {
+import { LangProps } from '@/interfaces/lang-props'
+export default function Skills({ dict }: LangProps) {
   return (
     <section id="skills" className="pt-10 md:pt-20">
       {/* section title */}
       <div className="flex items-center justify-center gap-4 pb-8 md:justify-start">
         <Tools className="animate-spin-slow" />
         <OnestText
-          text="Tecnologías"
+          text={dict.skills.title}
           style="bold"
           fontSize="36px"
           className="text-white"
@@ -130,7 +131,7 @@ export default function Skills() {
         <div className="flex flex-col">
           {/* learning title */}
           <OnestText
-            text="Aprendiendo"
+            text={dict.skills.learning}
             style="bold"
             fontSize="36px"
             className="bg-gradient-to-t from-[#54fbff] to-[#00a4c9] bg-clip-text text-center text-transparent dark:from-[#d4b48f] dark:to-rose-950 dark:text-transparent"
@@ -161,7 +162,7 @@ export default function Skills() {
         <div className="flex flex-col">
           {/* tools title */}
           <OnestText
-            text="Herramientas"
+            text={dict.skills.tools}
             style="bold"
             fontSize="36px"
             className="bg-gradient-to-t from-[#54fbff] to-[#00a4c9] bg-clip-text text-center text-transparent dark:from-[#d4b48f] dark:to-emerald-600 dark:text-transparent"

@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "title": "<>Enrique Suarez Portfolio</>",
+    "description": "Enrique Suarez web developer portfolio"
+  },
+  "navbar": {
+    "experience": "Experience",
+    "skills": "Tecnologies",
+    "proyects": "Proyects",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "Hey, I'm Enrique Suarez",
+    "description": "Welcome to my little corner, <span class='text-orange'> I am a web and software developer </span>, and I would love to join your team and contribute my bit :)",
+    "cv_button": "Dowload CV"
+  },
+  "expecience": {
+    "title": "Experiencia Laboral",
+    "date": "April 2024 - June 2024",
+    "description": "Internship at a company for 3 months, responsible for creating interactive web apps using <span class='text-orange'>NextJS</span>, <span class='text-orange'>React</span>, and <span class='text-orange'>TailwindCSS</span> with <span class='text-orange'>Github</span> and <span class='text-orange'>Git</span> for version control.",
+    "proyects_title": "Some of the projects in which I have participated in <span class='text-orange'>Marketec 360</span>"
+  },
+  "skills": {
+    "title": "skills",
+    "learning": "Learning",
+    "tools": "Tools"
+  },
+  "proyects": {
+    "title": "Proyects",
+    "github_button": "Repository",
+    "depilacion_laser": {
+      "title": "Depilacion Laser SHR",
+      "description": "Creation of informative website for SHR laser hair removal clinic, with a contact section. Using Nextjs, React and TailwindCSS"
+    },
+    "final_proyect": {
+      "title": "Final Degree Project",
+      "description": "In process..."
+    }
+  }
+}

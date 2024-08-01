@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "title": "<>Portfolio Enrique Suarez</>",
+    "description": "Portfolio de Enrique Suarez desarrollador de aplicaciones web"
+  },
+  "navbar": {
+    "experience": "Experiencia",
+    "skills": "Tecnologias",
+    "proyects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "header": {
+    "title": "Hey, soy Enrique Suarez",
+    "description": "Bienvenido a mi pequeño rinconcito, <span class='text-orange'> soy técnico superior de Desarrollo De Aplicaciones web </span>, y me encantaría unirme a tu equipo de trabajo y aportar mi granito de arena :)",
+    "cv_button": "Descargar CV"
+  },
+  "expecience": {
+    "title": "Experiencia Laboral",
+    "date": "Abril 2024 - Junio 2024",
+    "description": "Prácticas en empresa durante 3 meses, encargado de la creación de páginas web interactivas utilizando <span class='text-orange'>NextJS</span>, <span class='text-orange'>React</span>, y <span class='text-orange'>TailwindCSS</span> con <span class='text-orange'>Github</span> y <span class='text-orange'>Git</span> como control de versiones.",
+    "proyects_title": "Algunos proyectos en los que he colaborado en <span class='text-orange'>Marketec 360</span>"
+  },
+  "skills": {
+    "title": "Tecnologías",
+    "learning": "Aprendiendo",
+    "tools": "Herramientas"
+  },
+  "proyects": {
+    "title": "Proyectos",
+    "github_button": "Repositorio",
+    "depilacion_laser": {
+      "title": "Depilacion Laser SHR",
+      "description": "Creación de página web informativa para clinica de depilación láser SHR, con una seccion de contacto. Utilizando Nextjs, React y TailwindCSS"
+    },
+    "final_proyect": {
+      "title": "Proyecto final de Curso",
+      "description": "En construcción..."
+    }
+  }
+}

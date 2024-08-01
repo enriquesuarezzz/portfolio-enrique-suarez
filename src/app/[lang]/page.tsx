@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Metadata } from 'next'
+import { Metadata, ResolvingMetadata } from 'next'
 import { OnestText } from '@/components/atoms/onest_text'
 import Button from '@/components/molecules/button/button'
 import SectionLayout from '@/components/atoms/section_layout/section_layout'
@@ -9,26 +9,35 @@ import Download from '@/components/atoms/svg/download'
 import Experience from '@/components/molecules/experience/experience'
 import Skills from '@/components/molecules/skills/skills'
 import Proyects from '@/components/molecules/proyects/proyects'
+import { GeneralProps } from '@/interfaces/lang-props'
+import { getDictionary } from './dictionaries'
 
-export const metadata: Metadata = {
-  title: '<> Portfolio Enrique Suarez</>',
-  description: 'Portfolio de Enrique Suarez',
-  openGraph: {
-    title: 'Portfolio Enrique Suarez',
-    description:
-      'Portfolio de Enrique Suarez desarrollador de aplicaciones web',
-    url: 'https://www.enriquesuarez.dev',
-    siteName: 'Portfolio Enrique Suarez',
-    images: [
-      {
-        url: 'https://www.enriquesuarez.dev',
-        width: 800,
-        height: 600,
-      },
-    ],
-  },
+export async function generateMetadata(
+  { params: { lang } }: GeneralProps,
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
+  const dict = await getDictionary(lang)
+
+  return {
+    title: `${dict.metadata.title}`,
+    description: `${dict.metadata.description}`,
+    openGraph: {
+      title: `${dict.metadata.title}`,
+      description: `${dict.metadata.description}`,
+      url: 'https://www.enriquesuarez.dev',
+      siteName: `${dict.metadata.title}`,
+      images: [
+        {
+          url: 'https://www.enriquesuarez.dev/images/header_image.avif',
+          width: 800,
+          height: 600,
+        },
+      ],
+    },
+  }
 }
-export default function Home() {
+export default async function Home({ params: { lang } }: GeneralProps) {
+  const dict = await getDictionary(lang)
   return (
     <main className="flex flex-col">
       <SectionLayout>
@@ -38,7 +47,7 @@ export default function Home() {
           <div className="flex w-full max-w-[450px] flex-col items-center justify-center gap-6 md:max-w-[600px]">
             <div className="flex items-center gap-4 md:items-start">
               <OnestText
-                text="Hey, soy Enrique Suarez"
+                text={dict.header.title}
                 tag="h1"
                 style="bold"
                 fontSize="52px"
@@ -46,7 +55,7 @@ export default function Home() {
               />
               <Image
                 src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/header_image.avif'}`}
-                alt="Enrique Suarez"
+                alt="Enrique Suarez Image"
                 width={100}
                 height={20}
                 unoptimized
@@ -55,7 +64,7 @@ export default function Home() {
             </div>
             {/* description */}
             <OnestText
-              text="Bienvenido a mi pequeño rinconcito, <span class='text-orange'> soy técnico superior de Desarrollo De Aplicaciones web </span>, y me encantaría unirme a tu equipo de trabajo y aportar mi granito de arena :)"
+              text={dict.header.description}
               tag="h2"
               style="bold"
               fontSize="16px"
@@ -83,7 +92,7 @@ export default function Home() {
               </Button>
               {/* download cv button */}
               <Button
-                text="Descargar CV"
+                text={dict.header.cv_button}
                 href="/pdf/enrique_suarez.pdf"
                 rel="noopener noreferrer"
                 className="mt-4 text-nowrap md:ml-0 md:mt-0"
@@ -96,7 +105,7 @@ export default function Home() {
           <div className="hidden pb-0 md:flex md:pb-20 lg:pb-16">
             <Image
               src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/header_image.avif'}`}
-              alt="Enrique Suarez"
+              alt="Enrique Suarez Image"
               width={200}
               height={50}
               unoptimized
@@ -105,11 +114,11 @@ export default function Home() {
           </div>
         </header>
         {/* experience section */}
-        <Experience />
+        <Experience dict={dict} />
         {/* skills section */}
-        <Skills />
+        <Skills dict={dict} />
         {/* proyects section */}
-        <Proyects />
+        <Proyects dict={dict} />
       </SectionLayout>
     </main>
   )
