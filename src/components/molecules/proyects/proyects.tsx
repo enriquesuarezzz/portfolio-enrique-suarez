@@ -3,22 +3,22 @@ import LightBulb from '@/components/atoms/svg/lightbulb'
 import Image from 'next/image'
 import Button from '../button/button'
 import Github from '@/components/atoms/svg/github'
+import { LangProps } from '@/interfaces/lang-props'
 
-export default function Proyects() {
+export default function Proyects({ dict }: LangProps) {
   const proyects = [
     {
       image: '/images/depilacion_laser.avif',
-      title: 'Depilacion Laser SHR',
-      description:
-        'Creacion de página web informativa para clinica de depilación láser SHR, con una seccion de contacto. Utilizando Nextjs y TailwindCSS',
+      title: dict.proyects.depilacion_laser.title,
+      description: dict.proyects.depilacion_laser.description,
       preview:
         'https://depilacion-laser-oj0d2wyob-enriquesuarezzzs-projects.vercel.app/',
       github: 'https://github.com/enriquesuarezzz/depilacion-laser/',
     },
     {
       image: '/images/construction.avif',
-      title: 'Proyecto final de Curso',
-      description: 'En construcción...',
+      title: dict.proyects.final_proyect.title,
+      description: dict.proyects.final_proyect.description,
       preview: '',
       github: '',
     },
@@ -30,7 +30,7 @@ export default function Proyects() {
         {/* lightbulb icon */}
         <LightBulb />
         <OnestText
-          text="Proyectos"
+          text={dict.proyects.title}
           style="bold"
           fontSize="36px"
           className="text-white"
@@ -66,7 +66,7 @@ export default function Proyects() {
             </div>
             <div className="mb-6 flex gap-4">
               <Button
-                text="Repositorio"
+                text={dict.proyects.github_button}
                 href={github}
                 className="from-primary to-secondary mt-4 transform rounded-full bg-gradient-to-r px-6 py-2 font-semibold text-white transition-transform hover:scale-105"
                 rel="noopener noreferrer"

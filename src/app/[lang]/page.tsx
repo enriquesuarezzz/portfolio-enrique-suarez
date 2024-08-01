@@ -47,7 +47,7 @@ export default async function Home({ params: { lang } }: GeneralProps) {
           <div className="flex w-full max-w-[450px] flex-col items-center justify-center gap-6 md:max-w-[600px]">
             <div className="flex items-center gap-4 md:items-start">
               <OnestText
-                text="Hey, soy Enrique Suarez"
+                text={dict.header.title}
                 tag="h1"
                 style="bold"
                 fontSize="52px"
@@ -55,7 +55,7 @@ export default async function Home({ params: { lang } }: GeneralProps) {
               />
               <Image
                 src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/header_image.avif'}`}
-                alt="Enrique Suarez"
+                alt="Enrique Suarez Image"
                 width={100}
                 height={20}
                 unoptimized
@@ -64,7 +64,7 @@ export default async function Home({ params: { lang } }: GeneralProps) {
             </div>
             {/* description */}
             <OnestText
-              text="Bienvenido a mi pequeño rinconcito, <span class='text-orange'> soy técnico superior de Desarrollo De Aplicaciones web </span>, y me encantaría unirme a tu equipo de trabajo y aportar mi granito de arena :)"
+              text={dict.header.description}
               tag="h2"
               style="bold"
               fontSize="16px"
@@ -92,7 +92,7 @@ export default async function Home({ params: { lang } }: GeneralProps) {
               </Button>
               {/* download cv button */}
               <Button
-                text="Descargar CV"
+                text={dict.header.cv_button}
                 href="/pdf/enrique_suarez.pdf"
                 rel="noopener noreferrer"
                 className="mt-4 text-nowrap md:ml-0 md:mt-0"
@@ -105,7 +105,7 @@ export default async function Home({ params: { lang } }: GeneralProps) {
           <div className="hidden pb-0 md:flex md:pb-20 lg:pb-16">
             <Image
               src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/header_image.avif'}`}
-              alt="Enrique Suarez"
+              alt="Enrique Suarez Image"
               width={200}
               height={50}
               unoptimized
@@ -114,11 +114,11 @@ export default async function Home({ params: { lang } }: GeneralProps) {
           </div>
         </header>
         {/* experience section */}
-        <Experience />
+        <Experience dict={dict} />
         {/* skills section */}
-        <Skills />
+        <Skills dict={dict} />
         {/* proyects section */}
-        <Proyects />
+        <Proyects dict={dict} />
       </SectionLayout>
     </main>
   )

@@ -2,8 +2,9 @@ import { OnestText } from '@/components/atoms/onest_text'
 import Computer from '@/components/atoms/svg/computer'
 import Image from 'next/image'
 import Link from 'next/link'
+import { LangProps } from '@/interfaces/lang-props'
 
-export default function Experience() {
+export default function Experience({ dict }: LangProps) {
   return (
     <section
       id="experience"
@@ -33,7 +34,7 @@ export default function Experience() {
             />
             {/* period */}
             <OnestText
-              text="Abril 2024 - Junio 2024"
+              text={dict.expecience.date}
               style="bold"
               fontSize="16px"
               className="text-white"
@@ -42,7 +43,7 @@ export default function Experience() {
           {/* description */}
           <div className="flex w-full pt-4 md:w-1/2 md:pt-0">
             <OnestText
-              text="Prácticas en empresa durante 3 meses, encargado de la creación de páginas web interactivas utilizando <span class='text-orange'>NextJS</span>, <span class='text-orange'>React</span>, y <span class='text-orange'>TailwindCSS</span> con <span class='text-orange'>Github</span> y <span class='text-orange'>Git</span> como control de versiones."
+              text={dict.expecience.description}
               style="bold"
               fontSize="16px"
               className="text-center text-white md:text-start"
@@ -53,7 +54,7 @@ export default function Experience() {
           <div>
             {/* title */}
             <OnestText
-              text="Algunos proyectos en los que he colaborado en <span class='text-orange'>Marketec 360</span>"
+              text={dict.expecience.proyects_title}
               style="bold"
               fontSize="16px"
               className="text-center text-white md:text-start"
