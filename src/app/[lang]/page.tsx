@@ -93,7 +93,7 @@ export default async function Home({ params: { lang } }: GeneralProps) {
               {/* download cv button */}
               <Button
                 text={dict.header.cv_button}
-                href="/pdf/enrique_suarez.pdf"
+                href="/pdf/enrique_suarez_english.pdf"
                 rel="noopener noreferrer"
                 className="mt-4 text-nowrap md:ml-0 md:mt-0"
               >
