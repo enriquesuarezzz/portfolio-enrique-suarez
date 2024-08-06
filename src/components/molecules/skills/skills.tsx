@@ -7,6 +7,7 @@ import Html from '@/components/atoms/svg/skills/html'
 import Js from '@/components/atoms/svg/skills/js'
 import MySQL from '@/components/atoms/svg/skills/mysql'
 import NextJs from '@/components/atoms/svg/skills/nextjs'
+import Nodejs from '@/components/atoms/svg/skills/nodejs'
 import Php from '@/components/atoms/svg/skills/php'
 import Python from '@/components/atoms/svg/skills/pyhton'
 import ReactIcon from '@/components/atoms/svg/skills/react'
@@ -152,6 +153,14 @@ export default function Skills({ dict }: LangProps) {
               <Php className="mx-auto size-10 md:size-20" />
               <OnestText
                 text={'PHP'}
+                className="text-center text-white"
+                style="bold"
+              />
+            </div>
+            <div className="flex flex-col">
+              <Nodejs className="mx-auto size-10 md:size-20" />
+              <OnestText
+                text={'NodeJS'}
                 className="text-center text-white"
                 style="bold"
               />

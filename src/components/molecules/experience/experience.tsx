@@ -27,7 +27,7 @@ export default function Experience({ dict }: LangProps) {
           <div className="flex w-full flex-col items-center md:w-1/2 md:items-start">
             {/* company name */}
             <OnestText
-              text="Marketec 360"
+              text={dict.expecience.subtitle}
               style="bold"
               fontSize="24px"
               className="text-orange"
