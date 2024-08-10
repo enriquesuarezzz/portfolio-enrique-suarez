@@ -11,8 +11,7 @@ export default function Proyects({ dict }: LangProps) {
       image: '/images/depilacion_laser.avif',
       title: dict.proyects.depilacion_laser.title,
       description: dict.proyects.depilacion_laser.description,
-      preview:
-        'https://depilacion-laser-oj0d2wyob-enriquesuarezzzs-projects.vercel.app/',
+      preview: 'https://depilacion-laser.vercel.app/',
       github: 'https://github.com/enriquesuarezzz/depilacion-laser/',
     },
     {
