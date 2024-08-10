@@ -65,12 +65,14 @@ export default function Navbar({ dict }: LangProps) {
       <div className="flex gap-2 md:ml-5 md:gap-3">
         <button
           onClick={() => changeLanguage('en')}
+          aria-label="Spanish"
           className={`text-white hover:text-orange ${currentLang === 'es' ? 'opacity-50' : ''}`}
         >
           <England className="size-4 md:size-6" />
         </button>
         <button
           onClick={() => changeLanguage('es')}
+          aria-label="English"
           className={`text-white hover:text-orange ${currentLang === 'en' ? 'opacity-50' : ''}`}
         >
           <Spain className="size-4 md:size-6" />
