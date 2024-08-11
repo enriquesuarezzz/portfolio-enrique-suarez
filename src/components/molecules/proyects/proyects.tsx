@@ -15,11 +15,11 @@ export default function Proyects({ dict }: LangProps) {
       github: 'https://github.com/enriquesuarezzz/depilacion-laser/',
     },
     {
-      image: '/images/construction.avif',
-      title: dict.proyects.final_proyect.title,
-      description: dict.proyects.final_proyect.description,
-      preview: '',
-      github: '',
+      image: '/images/movie_finder.avif',
+      title: dict.proyects.movie_finder.title,
+      description: dict.proyects.movie_finder.description,
+      preview: 'https://movie-finder-two-beta.vercel.app/',
+      github: 'https://github.com/enriquesuarezzz/movie-finder.git',
     },
   ]
   return (

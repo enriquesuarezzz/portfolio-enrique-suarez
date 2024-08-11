@@ -32,9 +32,9 @@
       "title": "Depilacion Laser SHR",
       "description": "Creación de página web informativa para clinica de depilación láser SHR, con una seccion de contacto. Utilizando Nextjs, React y TailwindCSS"
     },
-    "final_proyect": {
-      "title": "Proyecto final de Curso",
-      "description": "En construcción..."
+    "movie_finder": {
+      "title": "Movie Finder App (en desarrollo)",
+      "description": "Creación de una aplicación web usando React y TailwindCSS para el FrontEnd, NodeJS y MySQL para el BackEnd con un login de usuarios y creación de una API para optener la información de las películas"
     }
   }
 }
