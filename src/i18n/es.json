@@ -16,10 +16,10 @@
   },
   "expecience": {
     "title": "Experiencia Laboral",
-    "subtitle": "Prácticas en Empresa",
+    "subtitle": "Marketec 360",
     "date": "Abril 2024 - Junio 2024",
     "description": "Prácticas en empresa durante 3 meses, encargado de la creación de páginas web interactivas utilizando <span class='text-orange'>NextJS</span>, <span class='text-orange'>React</span>, y <span class='text-orange'>TailwindCSS</span> con <span class='text-orange'>Github</span> y <span class='text-orange'>Git</span> como control de versiones.",
-    "proyects_title": "Algunos proyectos en los que <span class='text-orange'>he colaborado </span> en la empresa "
+    "proyects_title": "Algunos de los proyectos en los que he colaborado en <span class='text-orange'> Marketec360 </span>"
   },
   "skills": {
     "title": "Tecnologías",

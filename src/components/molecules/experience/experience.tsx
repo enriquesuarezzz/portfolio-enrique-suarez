@@ -17,7 +17,7 @@ export default function Experience({ dict }: LangProps) {
           <Computer />
           {/* title */}
           <OnestText
-            text="Experiencia Laboral"
+            text={dict.expecience.title}
             style="bold"
             fontSize="36px"
             className="text-white"
