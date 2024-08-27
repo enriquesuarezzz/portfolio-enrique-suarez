@@ -21,6 +21,13 @@ export default function Proyects({ dict }: LangProps) {
       preview: 'https://movie-finder-two-beta.vercel.app/',
       github: 'https://github.com/enriquesuarezzz/movie-finder.git',
     },
+    {
+      image: '/images/movie_finder_api.avif',
+      title: dict.proyects.movie_finder_api.title,
+      description: dict.proyects.movie_finder_api.description,
+      preview: 'https://movie-finder-two-beta.vercel.app/',
+      github: 'https://github.com/enriquesuarezzz/movie-finder-api.git',
+    },
   ]
   return (
     <section id="proyects" className="pt-10 md:pt-20">

@@ -1,6 +1,7 @@
 import { OnestText } from '@/components/atoms/onest_text'
 import Github from '@/components/atoms/svg/github'
 import Css from '@/components/atoms/svg/skills/css'
+import Express from '@/components/atoms/svg/skills/express'
 import Figma from '@/components/atoms/svg/skills/figma'
 import Git from '@/components/atoms/svg/skills/git'
 import Html from '@/components/atoms/svg/skills/html'
@@ -126,6 +127,22 @@ export default function Skills({ dict }: LangProps) {
                 style="bold"
               />
             </div>
+            <div className="flex flex-col">
+              <Nodejs className="mx-auto size-10 md:size-20" />
+              <OnestText
+                text={'NodeJS'}
+                className="text-center text-white"
+                style="bold"
+              />
+            </div>
+            <div className="flex flex-col">
+              <Express className="mx-auto size-10 md:size-20" />
+              <OnestText
+                text={'Express'}
+                className="text-center text-white"
+                style="bold"
+              />
+            </div>
           </div>
         </div>
         {/* learning */}
@@ -153,14 +170,6 @@ export default function Skills({ dict }: LangProps) {
               <Php className="mx-auto size-10 md:size-20" />
               <OnestText
                 text={'PHP'}
-                className="text-center text-white"
-                style="bold"
-              />
-            </div>
-            <div className="flex flex-col">
-              <Nodejs className="mx-auto size-10 md:size-20" />
-              <OnestText
-                text={'NodeJS'}
                 className="text-center text-white"
                 style="bold"
               />
