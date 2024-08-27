@@ -34,8 +34,12 @@
       "description": "Creation of informative website for SHR laser hair removal clinic, with a contact section. Using Nextjs, React and TailwindCSS"
     },
     "movie_finder": {
-      "title": "Movie Finder App (In development process)",
+      "title": "Movie Finder App (In Development)",
       "description": "Creation of a Movie Finder App using react and TailwindCSS for the FrontEnd, NodeJS and MySQL for the BackEnd with a login for users and creation of an API to obtain the Movies info"
+    },
+    "movie_finder_api": {
+      "title": "Movie Finder REST API (In Development)",
+      "description": "Creation of a REST API using Nodejs, Express and MySQL for the Movie Finder App"
     }
   }
 }
