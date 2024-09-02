@@ -12,7 +12,7 @@ Welcome to the repository for Enrique Suarez's personal portfolio website, built
 
 ## Overview
 
-This portfolio website serves as a digital resume and a showcase of my work as a [web developer"]. The site includes sections about me, my skills, projects I've worked on, my CV, and the technologies I am proficient in.
+This portfolio website serves as a digital resume and a showcase of my work as a web developer. The site includes sections about me, my skills, projects I've worked on, my CV, and the technologies I am proficient in.
 
 You can visit the live website [here](https://www.enriquesuarez.dev).
 
