@@ -25,7 +25,7 @@ export default function Proyects({ dict }: LangProps) {
       image: '/images/movie_finder_api.avif',
       title: dict.proyects.movie_finder_api.title,
       description: dict.proyects.movie_finder_api.description,
-      preview: 'https://movie-finder-two-beta.vercel.app/',
+      preview: 'https://movie-finder-api-jgrs.onrender.com/api',
       github: 'https://github.com/enriquesuarezzz/movie-finder-api.git',
     },
   ]
