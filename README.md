@@ -23,6 +23,7 @@ You can visit the live website [here](https://www.enriquesuarez.dev).
 - **About Me**: A detailed section providing information about my background, interests, and professional journey.
 - **CV Download**: Users can easily download a PDF version of my resume.
 - **Skills & Technologies**: An overview of the skills and technologies I am proficient in.
+- **Multilingual Support**: The website is available in multiple languages, allowing users to switch between languages easily.
 
 ## Technologies Used
 
