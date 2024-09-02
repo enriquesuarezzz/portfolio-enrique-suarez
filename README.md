@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website - Enrique Suarez
 
-## Getting Started
+Welcome to the repository for Enrique Suarez's personal portfolio website, built using Next.js and Tailwind CSS. This website is a comprehensive showcase of my skills, projects, and professional experience.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This portfolio website serves as a digital resume and a showcase of my work as a [web developer"]. The site includes sections about me, my skills, projects I've worked on, my CV, and the technologies I am proficient in.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You can visit the live website [here](https://www.enriquesuarez.dev).
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Responsive Design**: Optimized for all screen sizes, providing a seamless experience across devices.
+- **Project Showcase**: A dedicated section to highlight my projects, complete with descriptions, the technologies used, and links to live demos or GitHub repositories.
+- **About Me**: A detailed section providing information about my background, interests, and professional journey.
+- **CV Download**: Users can easily download a PDF version of my resume.
+- **Skills & Technologies**: An overview of the skills and technologies I am proficient in.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 
-## Deploy on Vercel
+## Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run this project locally, follow these steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/enriquesuarezzz/portfolio-enrique-suarez.git
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```bash
+    cd portfolio-enrique-suarez
+    ```
+
+3. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+4. **Run the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+5. **Open your browser to see the site:**
+
+    Visit `http://localhost:3000` to view the website locally.
+
+## Usage
+
+Once installed, you can modify the content in the `pages`, `components`, and `styles` directories to customize the portfolio to your liking.
+
+
+---
+
+Thank you for visiting my portfolio!
+
