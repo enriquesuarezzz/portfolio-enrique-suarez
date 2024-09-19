@@ -31,7 +31,7 @@
     "github_button": "Repository",
     "depilacion_laser": {
       "title": "Depilacion Laser SHR",
-      "description": "Creation of informative website for SHR laser hair removal clinic, with a contact section. Using Nextjs, React and TailwindCSS"
+      "description": "Creation of informative website for SHR laser hair removal clinic, with a contact section. Using Nextjs, Typescript and TailwindCSS"
     },
     "movie_finder": {
       "title": "Movie Finder App (In Development)",
@@ -40,6 +40,10 @@
     "movie_finder_api": {
       "title": "Movie Finder REST API (In Development)",
       "description": "Creation of a REST API using Nodejs, Express and MySQL for the Movie Finder App"
+    },
+    "by_cambao": {
+      "title": "byCambao Landing Page (In Development)",
+      "description": "Creation of landing page website for events in Lanzarote, with a contact section. Using Nextjs, Typescript and TailwindCSS"
     }
   }
 }
