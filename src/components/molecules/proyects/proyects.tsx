@@ -28,6 +28,13 @@ export default function Proyects({ dict }: LangProps) {
       preview: 'https://movie-finder-api-jgrs.onrender.com/api',
       github: 'https://github.com/enriquesuarezzz/movie-finder-api.git',
     },
+    {
+      image: '/images/by_cambao.avif',
+      title: dict.proyects.by_cambao.title,
+      description: dict.proyects.by_cambao.description,
+      preview: 'https://bycambao.vercel.app/',
+      github: 'https://github.com/enriquesuarezzz/bycambao.git',
+    },
   ]
   return (
     <section id="proyects" className="pt-10 md:pt-20">
