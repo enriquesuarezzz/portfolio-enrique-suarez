@@ -35,6 +35,13 @@ export default function Proyects({ dict }: LangProps) {
       preview: 'https://bycambao.vercel.app/',
       github: 'https://github.com/enriquesuarezzz/bycambao.git',
     },
+    {
+      image: '/images/sky_match.avif',
+      title: dict.proyects.sky_match.title,
+      description: dict.proyects.sky_match.description,
+      preview: 'https://sky-match.vercel.app/',
+      github: 'https://github.com/enriquesuarezzz/SkyMatch.git',
+    },
   ]
   return (
     <section id="proyects" className="pt-10 md:pt-20">
