@@ -43,7 +43,11 @@
     },
     "by_cambao": {
       "title": "byCambao Landing Page (En Desarrollo)",
-      "description": "Creación de una landing page de eventos en Lanzarote, with a contact section. Using Nextjs, Typescript and TailwindCSS"
+      "description": "Creación de una landing page de eventos en Lanzarote, with a contact section. Con Nextjs, Typescript and TailwindCSS"
+    },
+    "sky_match": {
+      "title": "skyMatch (In Development)",
+      "description": "SkyMatch es una plataforma web que conecta aerolíneas con aviones y tripulación disponibles para alquiler, facilitando la cobertura de necesidades operativas. Ofrece una interfaz intuitiva, funciones avanzadas de búsqueda y reservas seguras para garantizar transacciones sin complicaciones. Con Nextjs, Typescript and TailwindCSS"
     }
   }
 }
