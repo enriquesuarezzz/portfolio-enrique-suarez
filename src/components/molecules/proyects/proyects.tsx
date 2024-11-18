@@ -29,13 +29,6 @@ export default function Proyects({ dict }: LangProps) {
       github: 'https://github.com/enriquesuarezzz/movie-finder-api.git',
     },
     {
-      image: '/images/by_cambao.avif',
-      title: dict.proyects.by_cambao.title,
-      description: dict.proyects.by_cambao.description,
-      preview: 'https://bycambao.vercel.app/',
-      github: 'https://github.com/enriquesuarezzz/bycambao.git',
-    },
-    {
       image: '/images/sky_match.avif',
       title: dict.proyects.sky_match.title,
       description: dict.proyects.sky_match.description,
