@@ -44,6 +44,10 @@
     "sky_match": {
       "title": "skyMatch (In Development)",
       "description": "SkyMatch is a web platform that connects airlines with available aircraft and crew for rental, offering a streamlined solution for covering operational gaps. It provides an intuitive interface, advanced search features, and secure bookings to ensure seamless transactions. Using Nextjs, Typescript and TailwindCSS"
+    },
+    "sky_match_api": {
+      "title": "skyMatch REST API",
+      "description": "Creation of a REST API using Nodejs, Express and MySQL for the skyMatch App"
     }
   }
 }
