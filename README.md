@@ -1,4 +1,4 @@
-# Portfolio Website - Enrique Suare
+# Portfolio Website - Enrique Suarez
 
 Welcome to the repository for Enrique Suarez's personal portfolio website, built using Next.js and Tailwind CSS. This website is a comprehensive showcase of my skills, projects, and professional experience.
 
