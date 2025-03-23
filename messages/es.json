@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "title": "Portfolio Enrique Suarez",
+    "description": "Portfolio de Enrique Suarez desarrollador de aplicaciones web"
+  },
+  "navbar": {
+    "experience": "Experiencia",
+    "skills": "Tecnologias",
+    "proyects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "header": {
+    "title": "Hey, soy Enrique Suarez",
+    "description": "Soy desarrollador web con experiencia en la creación de aplicaciones modernas y funcionales. Tras realizar prácticas en una empresa, actualmente me dedico al desarrollo web como freelancer, ayudando a clientes a convertir sus ideas en proyectos digitales efectivos y atractivos. Me gustaría seguir creciendo profesionalmente y colaborar con un equipo donde pueda aportar mis conocimientos y continuar desarrollando mis habilidades",
+    "cv_button": "Descargar CV"
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "marketec_360": {
+      "title": "Marketec 360",
+      "date": "Abril 2024 - Junio 2024",
+      "description": "Prácticas en empresa durante 3 meses, encargado de la creación de páginas web interactivas utilizando NextJS, React, y TailwindCSS con Github y Git como control de versiones.",
+      "proyects_title": "Algunos de los proyectos en los que he colaborado en  Marketec360 "
+    },
+    "freelancer": {
+      "title": "Desarrollador Web Freelancer",
+      "date": "Junio 2024 - Actual",
+      "description": "Desarrollador web freelance con experiencia en la creación de sitios web y aplicaciones web responsivas y fáciles de usar. Dominio de tecnologías modernas como Next.js, React y Node.js, con enfoque en escribir código limpio y desarrollar interfaces intuitivas y funcionales. Capacidad demostrada para gestionar proyectos de forma independiente, desde la idea inicial hasta el despliegue, garantizando la satisfacción del cliente y la entrega a tiempo."
+    }
+  },
+  "skills": {
+    "title": "Tecnologías",
+    "learning": "Aprendiendo",
+    "tools": "Herramientas"
+  },
+  "proyects": {
+    "title": "Proyectos",
+    "github_button": "Repositorio",
+    "depilacion_laser": {
+      "title": "Depilacion Laser SHR",
+      "description": "Creación de página web informativa para clinica de depilación láser SHR, con una seccion de contacto. Utilizando Nextjs, Typescript y TailwindCSS"
+    },
+    "dc_wine": {
+      "title": "DC Wine",
+      "description": "DC Wine es una plataforma de comercio electrónico para una tienda de vinos utilizando Next.js, Tailwind CSS, Firebase para la gestión de bases de datos en tiempo real y Stripe para el procesamiento seguro de pagos. La plataforma permite a los usuarios navegar y comprar una variedad de vinos de manera fácil, con un diseño fluido y adaptable, ofreciendo una experiencia de compra segura y sin interrupciones."
+    },
+    "sky_match": {
+      "title": "skyMatch",
+      "description": "SkyMatch es una plataforma web que conecta aerolíneas con aviones y tripulación disponibles para alquiler, facilitando la cobertura de necesidades operativas. Ofrece una interfaz intuitiva, funciones avanzadas de búsqueda y reservas seguras para garantizar transacciones sin complicaciones. Con Nextjs, Typescript and TailwindCSS"
+    },
+    "sky_match_api": {
+      "title": "skyMatch REST API",
+      "description": "Creacion de una API REST con Nodejs, Express y MySQL para usarla en skyMatch App"
+    }
+  }
+}
