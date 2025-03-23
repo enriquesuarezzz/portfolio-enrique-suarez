@@ -1,52 +1,43 @@
 'use client'
-import { OnestText } from '@/components/atoms/onest_text'
-import England from '@/components/atoms/svg/england'
-import Spain from '@/components/atoms/svg/spain'
-import { LangProps } from '@/interfaces/lang-props'
 import Link from 'next/link'
-import { useRouter, usePathname } from 'next/navigation'
+import { OnestText } from '@/components/atoms/onest_text'
+import { useRouter } from 'next/navigation'
+import English from '@/components/atoms/svg/english'
+import Spanish from '@/components/atoms/svg/spanish'
 
-export default function Navbar({ dict }: LangProps) {
+interface NavbarItem {
+  translations: {
+    experience: string
+    skills: string
+    proyects: string
+    contact: string
+  }
+}
+
+export default function Navbar({ translations }: NavbarItem) {
   const router = useRouter()
-  const pathname = usePathname()
+  const changeLanguage = (locale: string) => {
+    router.push(`/${locale}`)
+  }
 
   const data = [
     {
-      title: dict.navbar.experience,
+      title: translations.experience,
       href: '/#experience',
     },
     {
-      title: dict.navbar.skills,
+      title: translations.skills,
       href: '/#skills',
     },
     {
-      title: dict.navbar.proyects,
+      title: translations.proyects,
       href: '/#proyects',
     },
     {
-      title: dict.navbar.contact,
-      href: 'mailto:enriquesuarezmartin@gmail.com',
+      title: translations.contact,
+      href: 'https://wa.me/+34688923009',
     },
   ]
-
-  const currentLang = pathname.startsWith('/es') ? 'es' : 'en'
-
-  const changeLanguage = (lang: string) => {
-    // Remove the leading '/' and split the path
-    const segments = pathname.slice(1).split('/')
-
-    // Check if the first segment is a language code (assuming 'en' or 'es')
-    if (segments[0] === 'en' || segments[0] === 'es') {
-      // Remove the existing language segment
-      segments.shift()
-    }
-
-    // Add the new language segment
-    const newPath = `/${lang}/${segments.join('/')}`
-
-    // Navigate to the new path
-    router.push(newPath)
-  }
 
   return (
     <nav className="fixed top-0 mx-auto flex w-full items-center justify-center gap-3 pt-5 md:gap-5">
@@ -54,28 +45,29 @@ export default function Navbar({ dict }: LangProps) {
       {data.map((item) => (
         <Link href={item.href} key={item.title}>
           <OnestText
-            text={item.title}
+            fontSize="20px"
             style="bold"
-            fontSize="19px"
-            className="text-white hover:text-orange"
-          />
+            className="relative mx-auto block w-fit text-white after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-orange after:transition after:duration-300 after:content-[''] hover:text-orange after:hover:scale-x-100"
+          >
+            {item.title}
+          </OnestText>
         </Link>
       ))}
       {/* Language selection */}
-      <div className="flex gap-2 md:ml-5 md:gap-3">
+      <div className="flex items-center space-x-4">
         <button
-          onClick={() => changeLanguage('en')}
-          aria-label="Spanish"
-          className={`text-white hover:text-orange ${currentLang === 'es' ? 'opacity-50' : ''}`}
+          aria-label="Change language to Spanish"
+          onClick={() => changeLanguage('es')}
+          title="Switch to Spanish"
         >
-          <England className="size-4 md:size-6" />
+          <Spanish className="h-6 w-6 hover:scale-110" />
         </button>
         <button
-          onClick={() => changeLanguage('es')}
-          aria-label="English"
-          className={`text-white hover:text-orange ${currentLang === 'en' ? 'opacity-50' : ''}`}
+          aria-label="Change language to English"
+          onClick={() => changeLanguage('en')}
+          title="Switch to English"
         >
-          <Spain className="size-4 md:size-6" />
+          <English className="h-6 w-6 hover:scale-110" />
         </button>
       </div>
     </nav>

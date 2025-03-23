@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "title": "Enrique Suarez Portfolio",
+    "description": "Enrique Suarez web developer portfolio"
+  },
+  "navbar": {
+    "experience": "Experience",
+    "skills": "Tecnologies",
+    "proyects": "Proyects",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "Hey, I'm Enrique Suarez",
+    "description": "I am a web developer with experience in creating modern and functional applications. After completing an internship at a company, I am now working as a freelance web developer, helping clients turn their ideas into effective and attractive digital projects. I am eager to continue growing professionally and collaborate with a team where I can contribute my skills and further develop my abilities",
+    "cv_button": "Dowload CV"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "marketec_360": {
+      "title": "Marketec 360",
+      "date": "April 2024 - June 2024",
+      "description": "Internship at a company for 3 months, responsible for creating interactive web apps using NextJS, React, and TailwindCSS with Github and Git for version control.",
+      "proyects_title": "Some of the projects in which I have participated in  Marketec360 "
+    },
+    "freelancer": {
+      "title": "Freelancer Web Developer",
+      "date": "June 2024 - Actual",
+      "description": "Freelance web developer with hands-on experience designing and building responsive, user-friendly websites and web applications. Skilled in modern technologies like Next.js, React, and Node.js, with a strong focus on delivering clean code and functional, intuitive interfaces. Proven ability to manage projects independently from concept to deployment, ensuring client satisfaction and timely delivery."
+    }
+  },
+  "skills": {
+    "title": "skills",
+    "learning": "Learning",
+    "tools": "Tools"
+  },
+  "proyects": {
+    "title": "Proyects",
+    "github_button": "Repository",
+    "depilacion_laser": {
+      "title": "Depilacion Laser SHR",
+      "description": "Creation of informative website for SHR laser hair removal clinic, with a contact section. Using Nextjs, Typescript and TailwindCSS"
+    },
+    "dc_wine": {
+      "title": "DC Wine",
+      "description": "DC Wine is a modern eCommerce platform for a wine shop using Next.js, Tailwind CSS, Firebase for real-time database management, and Stripe for secure payment processing. The platform allows users to easily browse and purchase a variety of wines with a smooth, responsive design, providing a seamless and secure shopping experience."
+    },
+    "sky_match": {
+      "title": "skyMatch",
+      "description": "SkyMatch is a web platform that connects airlines with available aircraft and crew for rental, offering a streamlined solution for covering operational gaps. It provides an intuitive interface, advanced search features, and secure bookings to ensure seamless transactions. Using Nextjs, Typescript and TailwindCSS"
+    },
+    "sky_match_api": {
+      "title": "skyMatch REST API",
+      "description": "Creation of a REST API using Nodejs, Express and MySQL for the skyMatch App"
+    }
+  }
+}
