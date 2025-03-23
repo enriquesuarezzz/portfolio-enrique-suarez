@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+html {
+  scrollbar-width: smooth;
+  background-color: #0f172a;
+  scroll-behavior: smooth;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+body {
+  font-family: 'Barlow', sans-serif;
+}
+section::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.onHover {
+  transition: all 0.3s ease-in-out;
+}
+
+ul {
+  list-style: disc;
+}
+
+.marquee {
+  white-space: nowrap;
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+@media (min-width: 768px) {
+  /* md */
+  .marquee {
+    animation: marquee 30s linear infinite;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* lg */
+  .marquee {
+    animation: marquee 30s linear infinite;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

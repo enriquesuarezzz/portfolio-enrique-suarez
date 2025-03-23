@@ -1,10 +1,11 @@
-import { OnestText } from '@/components/atoms/onest_text'
-import Computer from '@/components/atoms/svg/computer'
 import Image from 'next/image'
 import Link from 'next/link'
-import { LangProps } from '@/interfaces/lang-props'
+import { OnestText } from '@/components/atoms/onest_text'
+import { getTranslations } from 'next-intl/server'
+import Computer from '@/components/atoms/svg/computer'
 
-export default function Experience({ dict }: LangProps) {
+export async function Experience() {
+  const t = await getTranslations('experience')
   return (
     <section
       id="experience"
@@ -16,49 +17,42 @@ export default function Experience({ dict }: LangProps) {
           {/* computer icon */}
           <Computer />
           {/* title */}
-          <OnestText
-            text={dict.expecience.title}
-            style="bold"
-            fontSize="36px"
-            className="text-white"
-          />
+          <OnestText style="bold" fontSize="32px" className="text-white">
+            {t('title')}
+          </OnestText>
         </div>
         <div className="flex flex-col items-center justify-center pt-6 md:flex-row md:items-start">
           <div className="flex w-full flex-col items-center md:w-1/2 md:items-start">
             {/* company name */}
-            <OnestText
-              text={dict.expecience.subtitle}
-              style="bold"
-              fontSize="24px"
-              className="text-orange"
-            />
+            <OnestText style="bold" fontSize="22px" className="text-orange">
+              {t('marketec_360.title')}
+            </OnestText>
             {/* period */}
-            <OnestText
-              text={dict.expecience.date}
-              style="bold"
-              fontSize="16px"
-              className="text-white"
-            />
+            <OnestText style="bold" fontSize="16px" className="text-white">
+              {t('marketec_360.date')}
+            </OnestText>
           </div>
           {/* description */}
           <div className="flex w-full pt-4 md:w-1/2 md:pt-0">
             <OnestText
-              text={dict.expecience.description}
               style="bold"
               fontSize="16px"
               className="text-center text-white md:text-start"
-            />
+            >
+              {t('marketec_360.description')}
+            </OnestText>
           </div>
         </div>
         <div className="flex flex-col gap-4 pt-5 md:pt-10">
           <div>
             {/* title */}
             <OnestText
-              text={dict.expecience.proyects_title}
               style="bold"
               fontSize="16px"
               className="text-center text-white md:text-start"
-            />
+            >
+              {t('marketec_360.proyects_title')}
+            </OnestText>
           </div>
           {/* projects */}
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
@@ -69,7 +63,7 @@ export default function Experience({ dict }: LangProps) {
                 width={400}
                 height={300}
                 alt="Proyect"
-                className="transition-all hover:scale-110"
+                className="transition-all duration-300 ease-in-out hover:scale-110"
               />
             </Link>
             {/* second project */}
@@ -79,7 +73,7 @@ export default function Experience({ dict }: LangProps) {
                 width={400}
                 height={300}
                 alt="Proyect"
-                className="transition-all hover:scale-110"
+                className="transition-all duration-300 ease-in-out hover:scale-110"
               />
             </Link>
             {/* third project */}
@@ -89,7 +83,7 @@ export default function Experience({ dict }: LangProps) {
                 width={400}
                 height={300}
                 alt="Proyect"
-                className="transition-all hover:scale-110"
+                className="transition-all duration-300 ease-in-out hover:scale-110"
               />
             </Link>
             {/* fourth project */}
@@ -99,9 +93,31 @@ export default function Experience({ dict }: LangProps) {
                 width={400}
                 height={300}
                 alt="Proyect"
-                className="transition-all hover:scale-110"
+                className="transition-all duration-300 ease-in-out hover:scale-110"
               />
             </Link>
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-center pt-10 md:flex-row md:items-start">
+          <div className="flex w-full flex-col items-center md:w-1/2 md:items-start">
+            {/* company name */}
+            <OnestText style="bold" fontSize="22px" className="text-orange">
+              {t('freelancer.title')}
+            </OnestText>
+            {/* period */}
+            <OnestText style="bold" fontSize="16px" className="text-white">
+              {t('freelancer.date')}
+            </OnestText>
+          </div>
+          {/* description */}
+          <div className="flex w-full pt-4 md:w-1/2 md:pt-0">
+            <OnestText
+              style="bold"
+              fontSize="16px"
+              className="text-center text-white md:text-start"
+            >
+              {t('freelancer.description')}
+            </OnestText>
           </div>
         </div>
       </div>
