@@ -19,7 +19,7 @@ export async function Header() {
           </OnestText>
           {/* image */}
           <Image
-            src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/header_image.avif'}`}
+            src={'/images/header_image.avif'}
             alt="Enrique Suarez Image"
             width={100}
             height={100}
@@ -63,7 +63,7 @@ export async function Header() {
       {/* image */}
       <div className="hidden pb-0 md:flex md:pb-20 lg:pb-16">
         <Image
-          src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/header_image.avif'}`}
+          src={'/images/header_image.avif'}
           alt="Enrique Suarez Image"
           width={250}
           height={200}

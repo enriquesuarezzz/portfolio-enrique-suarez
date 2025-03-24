@@ -59,7 +59,7 @@ export async function Experience() {
             {/* first project */}
             <Link href="https://mumbaimasalarestaurants.com/es" target="_blank">
               <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/mumbai.avif'}`}
+                src={'/images/mumbai.avif'}
                 width={400}
                 height={300}
                 alt="Proyect"
@@ -69,7 +69,7 @@ export async function Experience() {
             {/* second project */}
             <Link href="https://kalmaholiday.com/es" target="_blank">
               <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/kalma_holiday.avif'}`}
+                src={'/images/kalma_holiday.avif'}
                 width={400}
                 height={300}
                 alt="Proyect"
@@ -79,7 +79,7 @@ export async function Experience() {
             {/* third project */}
             <Link href="https://www.graciplus.com/es" target="_blank">
               <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/graciplus.avif'}`}
+                src={'/images/graciplus.avif'}
                 width={400}
                 height={300}
                 alt="Proyect"
@@ -89,7 +89,7 @@ export async function Experience() {
             {/* fourth project */}
             <Link href="https://www.bravus-design.com/" target="_blank">
               <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + '/images/bravus_design.avif'}`}
+                src={'/images/bravus_design.avif'}
                 width={400}
                 height={300}
                 alt="Proyect"
