@@ -7,12 +7,6 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  remotePatterns: [
-    {
-      protocol: 'https',
-      hostname: 'www.enriquesuarez.dev',
-    },
-  ],
 }
 
 export default withNextIntl(nextConfig)

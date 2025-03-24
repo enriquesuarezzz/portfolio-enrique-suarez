@@ -55,7 +55,7 @@ export async function Proyects() {
             className="relative flex h-full max-h-[500px] max-w-[500px] flex-col items-center justify-center rounded-3xl border border-gray-400 bg-gradient-to-r from-gray-800 to-gray-900 shadow-2xl"
           >
             <Image
-              src={`${process.env.NEXT_PUBLIC_IMAGES_PATH + image}`}
+              src={image}
               width={500}
               height={300}
               alt="Project"
