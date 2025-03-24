@@ -22,7 +22,9 @@ export default function Button({
       className={`flex h-fit w-fit items-center justify-center gap-2 rounded-full bg-gray-700/70 px-6 py-1 hover:bg-gray-800 ${className}`}
     >
       {children}
-      <OnestText children={text} fontSize="19px" className={`text-white`} />
+      <OnestText fontSize="19px" className={`text-white`}>
+        {text}
+      </OnestText>
 
       {download}
     </Link>
