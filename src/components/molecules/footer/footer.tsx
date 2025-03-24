@@ -1,7 +1,6 @@
 import { OnestText } from '@/components/atoms/onest_text'
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
-import Image from 'next/image'
 import Instagram from '@/components/atoms/svg/instagram'
 import Whatsapp from '@/components/atoms/svg/whatsapp'
 
