@@ -33,13 +33,13 @@ export default async function Footer() {
               </OnestText>
             </Link>
             {/* Products Link */}
-            <Link href="#proyects">
+            <Link href="#projects">
               <OnestText
                 fontSize="19px"
                 style="bold"
                 className="relative mx-auto block w-fit text-white after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-[orange] after:transition after:duration-300 after:content-[''] hover:text-orange after:hover:scale-x-100"
               >
-                {t('proyects')}
+                {t('projects')}
               </OnestText>
             </Link>
           </div>
