@@ -6,7 +6,7 @@
   "navbar": {
     "experience": "Experiencia",
     "skills": "Tecnologias",
-    "proyects": "Proyectos",
+    "projects": "Proyectos",
     "contact": "Contacto"
   },
   "header": {
@@ -20,7 +20,7 @@
       "title": "Marketec 360",
       "date": "Abril 2024 - Junio 2024",
       "description": "Prácticas en empresa durante 3 meses, encargado de la creación de páginas web interactivas utilizando NextJS, React, y TailwindCSS con Github y Git como control de versiones.",
-      "proyects_title": "Algunos de los proyectos en los que he colaborado en  Marketec360 "
+      "projects_title": "Algunos de los proyectos en los que he colaborado en  Marketec360 "
     },
     "freelancer": {
       "title": "Desarrollador Web Freelancer",
@@ -33,7 +33,7 @@
     "learning": "Aprendiendo",
     "tools": "Herramientas"
   },
-  "proyects": {
+  "projects": {
     "title": "Proyectos",
     "github_button": "Repositorio",
     "depilacion_laser": {
@@ -51,6 +51,10 @@
     "sky_match_api": {
       "title": "skyMatch REST API",
       "description": "Creacion de una API REST con Nodejs, Express y MySQL para usarla en skyMatch App"
+    },
+    "crematorio_hela": {
+      "title": "Crematorio Hela",
+      "description": "Creación de una aplicación web moderna para un servicio de incineración de mascotas, construida con Vite, React, Tailwind CSS, Swiper e i18n para traducciones."
     }
   }
 }
