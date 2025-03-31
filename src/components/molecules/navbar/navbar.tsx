@@ -9,7 +9,7 @@ interface NavbarItem {
   translations: {
     experience: string
     skills: string
-    proyects: string
+    projects: string
     contact: string
   }
 }
@@ -30,8 +30,8 @@ export default function Navbar({ translations }: NavbarItem) {
       href: '/#skills',
     },
     {
-      title: translations.proyects,
-      href: '/#proyects',
+      title: translations.projects,
+      href: '/#projects',
     },
     {
       title: translations.contact,
@@ -41,7 +41,7 @@ export default function Navbar({ translations }: NavbarItem) {
 
   return (
     <>
-      <nav className="fixed top-0 mx-auto hidden w-full items-center justify-center gap-3 pt-5 md:flex md:gap-5">
+      <nav className="fixed top-0 mx-auto hidden w-full items-center justify-center gap-3 pt-8 md:flex md:gap-5">
         {/* Navbar links */}
         {data.map((item) => (
           <Link href={item.href} key={item.title}>
