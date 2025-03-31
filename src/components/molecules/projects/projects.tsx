@@ -5,9 +5,9 @@ import Github from '@/components/atoms/svg/github'
 import { getTranslations } from 'next-intl/server'
 import LightBulb from '@/components/atoms/svg/lightbulb'
 
-export async function Proyects() {
-  const t = await getTranslations('proyects')
-  const proyects = [
+export async function Projects() {
+  const t = await getTranslations('projects')
+  const projects = [
     {
       image: '/images/depilacion_laser.avif',
       title: t('depilacion_laser.title'),
@@ -27,18 +27,25 @@ export async function Proyects() {
       title: t('sky_match.title'),
       description: t('sky_match.description'),
       preview: 'https://sky-match.vercel.app/',
-      github: 'https://github.com/enriquesuarezzz/SkyMatch.git',
+      github: 'https://github.com/enriquesuarezzz/sky-match.git',
     },
     {
       image: '/images/sky_match_api.avif',
       title: t('sky_match_api.title'),
       description: t('sky_match_api.description'),
       preview: 'https://sky-match.vercel.app/',
-      github: 'https://github.com/enriquesuarezzz/SkyMatch.git',
+      github: 'https://github.com/enriquesuarezzz/sky-match-api.git',
+    },
+    {
+      image: '/images/crematorio_hela.avif',
+      title: t('crematorio_hela.title'),
+      description: t('crematorio_hela.description'),
+      preview: 'https://crematorio-hela.vercel.app/',
+      github: 'https://github.com/enriquesuarezzz/crematorio-hela.git',
     },
   ]
   return (
-    <section id="proyects" className="pt-10 md:pt-20">
+    <section id="projects" className="pt-10 md:pt-20">
       {/* section title */}
       <div className="flex items-center justify-center gap-4 pb-8 md:justify-start">
         {/* lightbulb icon */}
@@ -49,10 +56,10 @@ export async function Proyects() {
       </div>
       {/* cards */}
       <div className="flex flex-col items-center justify-center gap-10 md:grid md:grid-cols-2 lg:gap-20">
-        {proyects.map(({ image, title, description, preview, github }) => (
+        {projects.map(({ image, title, description, preview, github }) => (
           <div
             key={title}
-            className="relative flex h-full max-h-[500px] max-w-[500px] flex-col items-center justify-center rounded-3xl border border-gray-400 bg-gradient-to-r from-gray-800 to-gray-900 shadow-2xl"
+            className="flex h-full max-h-[500px] max-w-[500px] flex-col items-center justify-center rounded-3xl border border-gray-400 bg-gradient-to-r from-gray-800 to-gray-900 shadow-2xl"
           >
             <Image
               src={image}
