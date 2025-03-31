@@ -30,7 +30,7 @@ export async function Skills() {
         </OnestText>
       </div>
       {/* tecnologies */}
-      <div className="mx-10 grid grid-cols-1 gap-6 md:mx-0 md:grid-cols-2">
+      <div className="mx-2 grid grid-cols-1 gap-6 md:mx-0 md:grid-cols-2">
         {/* frontend */}
         <div className="flex flex-col">
           {/* frontend title */}

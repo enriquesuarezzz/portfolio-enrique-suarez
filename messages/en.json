@@ -6,7 +6,7 @@
   "navbar": {
     "experience": "Experience",
     "skills": "Tecnologies",
-    "proyects": "Proyects",
+    "projects": "Projects",
     "contact": "Contact"
   },
   "header": {
@@ -20,7 +20,7 @@
       "title": "Marketec 360",
       "date": "April 2024 - June 2024",
       "description": "Internship at a company for 3 months, responsible for creating interactive web apps using NextJS, React, and TailwindCSS with Github and Git for version control.",
-      "proyects_title": "Some of the projects in which I have participated in  Marketec360 "
+      "projects_title": "Some of the projects in which I have participated in  Marketec360 "
     },
     "freelancer": {
       "title": "Freelancer Web Developer",
@@ -33,8 +33,8 @@
     "learning": "Learning",
     "tools": "Tools"
   },
-  "proyects": {
-    "title": "Proyects",
+  "projects": {
+    "title": "Projects",
     "github_button": "Repository",
     "depilacion_laser": {
       "title": "Depilacion Laser SHR",
@@ -51,6 +51,10 @@
     "sky_match_api": {
       "title": "skyMatch REST API",
       "description": "Creation of a REST API using Nodejs, Express and MySQL for the skyMatch App"
+    },
+    "crematorio_hela": {
+      "title": "Crematorio Hela",
+      "description": "Creation of a modern and responsive web application for a pet crematory service, built with Vite, React, Tailwind CSS, Swiper, and i18n for translations."
     }
   }
 }

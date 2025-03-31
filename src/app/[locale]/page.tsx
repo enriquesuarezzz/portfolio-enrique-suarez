@@ -1,6 +1,7 @@
 import { Experience } from '@/components/molecules/experience/experience'
 import { Header } from '@/components/molecules/header/header'
-import { Proyects } from '@/components/molecules/proyects/proyects'
+import { Projects } from '@/components/molecules/projects/projects'
+
 import { Skills } from '@/components/molecules/skills/skills'
 
 import { getTranslations } from 'next-intl/server'
@@ -20,7 +21,7 @@ export default async function HomePage() {
       <Header />
       <Experience />
       <Skills />
-      <Proyects />
+      <Projects />
     </main>
   )
 }

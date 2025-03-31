@@ -51,7 +51,7 @@ export async function Experience() {
               fontSize="16px"
               className="text-center text-white md:text-start"
             >
-              {t('marketec_360.proyects_title')}
+              {t('marketec_360.projects_title')}
             </OnestText>
           </div>
           {/* projects */}

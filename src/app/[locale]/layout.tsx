@@ -43,7 +43,7 @@ export default async function RootLayout({
   const navbarTranslations = messages.navbar as {
     experience: string
     skills: string
-    proyects: string
+    projects: string
     contact: string
   }
 
