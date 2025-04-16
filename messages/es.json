@@ -55,6 +55,10 @@
     "crematorio_hela": {
       "title": "Crematorio Hela",
       "description": "Creación de una aplicación web moderna para un servicio de incineración de mascotas, construida con Vite, React, Tailwind CSS, Swiper e i18n para traducciones."
+    },
+    "task_manager": {
+      "title": "Task Manager",
+      "description": "Creación de una aplicación web de gestión de tareas con funciones de arrastrar y soltar, creación y edición de tareas, y sincronización de estados en tiempo real. Desarrollada con Next.js + tailwindCSS (frontend) y Node.js + MongoDB (backend)."
     }
   }
 }

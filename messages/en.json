@@ -55,6 +55,10 @@
     "crematorio_hela": {
       "title": "Crematorio Hela",
       "description": "Creation of a modern and responsive web application for a pet crematory service, built with Vite, React, Tailwind CSS, Swiper, and i18n for translations."
+    },
+    "task_manager": {
+      "title": "Task Manager",
+      "description": "Creation of a full-stack task management app with drag-and-drop features, task creation/editing, and real-time state syncing. Built with Next.js + tailwindCSS (Frontend) and Node.js + MongoDB (Backend)."
     }
   }
 }
