@@ -43,6 +43,13 @@ export async function Projects() {
       preview: 'https://crematorio-hela.vercel.app/',
       github: 'https://github.com/enriquesuarezzz/crematorio-hela.git',
     },
+    {
+      image: '/images/task_manager.avif',
+      title: t('task_manager.title'),
+      description: t('task_manager.description'),
+      preview: 'https://task-manager-theta-seven-97.vercel.app/',
+      github: 'https://github.com/enriquesuarezzz/task-manager.git',
+    },
   ]
   return (
     <section id="projects" className="pt-10 md:pt-20">
