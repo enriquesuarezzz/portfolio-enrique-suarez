@@ -65,8 +65,8 @@ export async function Header() {
         <Image
           src={'/images/header_image.avif'}
           alt="Enrique Suarez Image"
-          width={250}
-          height={200}
+          width={220}
+          height={100}
           unoptimized
           className="rounded-full"
         />
