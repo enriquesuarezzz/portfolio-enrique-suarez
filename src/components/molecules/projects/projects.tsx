@@ -50,6 +50,13 @@ export async function Projects() {
       preview: 'https://task-manager-theta-seven-97.vercel.app/',
       github: 'https://github.com/enriquesuarezzz/task-manager.git',
     },
+    {
+      image: '/images/a11y_vision.avif',
+      title: t('a11y_vision.title'),
+      description: t('a11y_vision.description'),
+      preview: 'https://a11y-vision.vercel.app/',
+      github: 'https://github.com/enriquesuarezzz/a11y_vision.git',
+    },
   ]
   return (
     <section id="projects" className="pt-10 md:pt-20">
