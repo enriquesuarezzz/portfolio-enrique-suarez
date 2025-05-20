@@ -59,6 +59,10 @@
     "task_manager": {
       "title": "Task Manager",
       "description": "Creation of a full-stack task management app with drag-and-drop features, task creation/editing, and real-time state syncing. Built with Next.js + tailwindCSS (Frontend) and Node.js + MongoDB (Backend)."
+    },
+    "a11y_vision": {
+      "title": "A11y Vision",
+      "description": "React + Vite + TailwindCSS tool to simulate visual impairments. Upload an image, select a condition, and preview how it appears to users with that visual impairment. Ideal for designers and developers to improve accessibility."
     }
   }
 }

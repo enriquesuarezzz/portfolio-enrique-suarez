@@ -59,6 +59,10 @@
     "task_manager": {
       "title": "Task Manager",
       "description": "Creación de una aplicación web de gestión de tareas con funciones de arrastrar y soltar, creación y edición de tareas, y sincronización de estados en tiempo real. Desarrollada con Next.js + tailwindCSS (frontend) y Node.js + MongoDB (backend)."
+    },
+    "a11y_vision": {
+      "title": "A11y Vision",
+      "description": "Herramienta con React + Vite + TailwindCSS para simular discapacidades visuales. Sube una imagen, elige una condición y visualiza cómo la vería una persona con esa discapacidad visual. Ideal para diseñadores y desarrolladores que buscan mejorar la accesibilidad."
     }
   }
 }
